@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('index', () => {
-  return queryCollection('index').first()
+  return queryCollection('content_en').path('/').first()
 })
 if (!page.value) {
   throw createError({
@@ -29,8 +29,8 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
-    <LandingBlog :page />
-    <LandingTestimonials :page />
+    <!-- <LandingBlog :page /> -->
+    <!-- <LandingTestimonials :page /> -->
     <LandingFAQ :page />
   </UPage>
 </template>

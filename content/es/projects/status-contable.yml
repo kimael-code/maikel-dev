@@ -1,0 +1,6 @@
+title: Status Contable
+description: Aplicación web para el seguimiento de gastos e ingresos financieros personales.
+image: /hero/status-contable-1.avif
+url: "https://gitlab.com/profemaik/status-contable"
+tags: ["dashboard", "laravel", "vue", "bulma", "postgresql"]
+date: "2023"

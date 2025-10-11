@@ -1,0 +1,6 @@
+title: SCBMK
+description: A project developed with the CodeIgniter PHP framework, demonstrating the ability to build robust web applications following the Model-View-Controller design pattern.
+image: /hero/scbmk-1.avif
+url: "https://gitlab.com/profemaik/php-codeigniter-scbmk"
+tags: ["dashboard", "codeigniter", "javascript", "bootstrap", "postgresql"]
+date: "2022"

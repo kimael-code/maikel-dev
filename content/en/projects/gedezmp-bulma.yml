@@ -1,0 +1,6 @@
+title: Gedezmp Bulma
+description: It's an React Js application that allows you to create a file with a .zmp extension from a .csv file. The resulting .zmp file can be used to run batch operations, via terminal, on Zimbra mail servers.
+image: /hero/gedezmp-1.avif
+url: "https://github.com/kimael-code/gedezmp-bulma"
+tags: ["react", "bulma", "javascript"]
+date: "2022"

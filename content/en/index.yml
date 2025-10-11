@@ -1,0 +1,77 @@
+seo:
+  title: "Maikel Carballo - Full Stack Web Dev"
+  description: "Portfolio of Maikel Carballo, a Full Stack Web Developer with over 5 years of experience. Specialist in PHP, Laravel, Vue.js, and PostgreSQL. Discover my projects and expertise."
+  keywords: "Full Stack Web Developer, PHP Developer, Laravel Developer, Venezuela Programmer, Maikel Carballo, Developer Portfolio, Vue.js, Inertia.js, PostgreSQL, TypeScript, Nuxt."
+title: "Maikel Carballo: Full Stack Web Developer & IT Professor"
+description: "Building robust, scalable, and secure web solutions to optimize processes. Over 5 years of experience turning ideas into efficient web applications."
+hero:
+  images:
+    - src: /hero/gedezmp-1.avif
+      alt: Generador de archivos ZMP
+    - src: /hero/mi-admin-usuarios-1.avif
+      alt: Administrador de usuarios
+    - src: /hero/scbmk-1.avif
+      alt: Sistema de Control Base mk
+    - src: /hero/status-contable-1.avif
+      alt: Seguimiento de egresos e ingresos
+about:
+  title: "About Me"
+  description: |
+    Hello! I'm Maikel Carballo, a passionate Full Stack Web Developer and IT Professor based in La Guaira, Venezuela.
+    My main goal is to build high-quality software that not only meets technical requirements but also streamlines processes and delivers real value to organizations.
+experience:
+  title: Work Experience
+  items:
+    - position: "Systems Analyst at"
+      date: "2021 - Present"
+      company:
+        name: FOGADE
+        # logo: "i-simple-icons-nuxtdotjs"
+        url: "https://www.fogade.gob.ve/"
+        color: "#0262B2"
+    - position: "Programmer Analyst at"
+      date: "2020 - 2021"
+      company:
+        name: CMMBLDC
+        # logo: "i-simple-icons-raycast"
+        url: "https://www.cmldc.gob.ve/"
+        color: "#021758"
+    - position: "Professor at"
+      date: "2013 - 2018"
+      company:
+        name: UNE
+        # logo: "i-simple-icons-linear"
+        url: "https://une.edu.ve/"
+        color: "#0E6476"
+faq:
+  title: Frequently Asked Questions
+  description: Answers to common questions about my job.
+  categories:
+    - title: Services & Process
+      questions:
+        - label: What services do you offer?
+          content: |
+            I develop web applications and/or systems. This includes requirements analysis, database design, development, and deployment.
+        - label: What is your development methodology?
+          content: |
+            I follow a development philosophy based on Scrum, that is, iterative developments with priority given to what has the most value for the client/user.
+        - label: What type of work are you interested in?
+          content: |
+            I'm interested in any type of work, but primarily remote or project-based. I'm also interested in full-time or in-person positions.
+    - title: Tools & Technologies
+      questions:
+        - label: What is your development stack?
+          content: |
+            My favorite stack is: Laravel + Vue + TypeScript + Tailwind + PostgreSQL. And Docker for development and deployment 😁.
+        - label: Which front-end development tools have you worked with?
+          content: |
+            Mostly JavaScript and Vue Js. I also made little apps with React Js and Nuxt. Recently I'm working with TypeScript and Tailwind CSS.
+        - label: Have you ever developed with Python?
+          content: |
+            Yes, I have developed an application with Django as a self-learning method, here is the repository: https://gitlab.com/profemaik/python-django-certipro
+        - label: Do you use any AI technology?
+          content: |
+            Yes, I do. Mostly Gemini and DeepSeek.
+        - label: Have you worked with Docker?
+          content: |
+            Yes, I have. Yes, I have containerized applications using Docker to be deployed in production environments.

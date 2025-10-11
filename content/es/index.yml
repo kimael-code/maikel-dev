@@ -1,0 +1,77 @@
+seo:
+  title: "Maikel Carballo - Desarrollador Web Full Stack"
+  description: "Portafolio de Maikel Carballo, un Desarrollador Web Full Stack con más de 5 años de experiencia. Especialista en PHP, Laravel, Vue.js y PostgreSQL. Descubre mis proyectos y experiencia."
+  keywords: "Desarrollador Web Full Stack, Desarrollador PHP, Desarrollador Laravel, Programador de Venezuela, Maikel Carballo, Portafolio de Desarrollador, Vue.js, Inertia.js, PostgreSQL, TypeScript, Nuxt."
+title: "Maikel Carballo: Desarrollador Web Full Stack y Profesor de TI"
+description: "Construyendo soluciones web robustas, escalables y seguras para optimizar procesos. Más de 5 años de experiencia convirtiendo ideas en aplicaciones web eficientes."
+hero:
+  images:
+    - src: /hero/gedezmp-1.avif
+      alt: "Generador de archivos ZMP"
+    - src: /hero/mi-admin-usuarios-1.avif
+      alt: "Administrador de usuarios"
+    - src: /hero/scbmk-1.avif
+      alt: "Sistema de Control Base mk"
+    - src: /hero/status-contable-1.avif
+      alt: "Seguimiento de egresos e ingresos"
+about:
+  title: "Sobre Mí"
+  description: |
+    ¡Hola! Soy Maikel Carballo, un apasionado Desarrollador Web Full Stack y Profesor de TI residenciado en La Guaira, Venezuela.
+    Mi objetivo principal es construir software de alta calidad que no solo cumpla con los requisitos técnicos, sino que también agilice los procesos y entregue valor real a las organizaciones.
+experience:
+  title: "Experiencia Laboral"
+  items:
+    - position: "Analista de Sistemas en"
+      date: "2021 - Presente"
+      company:
+        name: FOGADE
+        # logo: "i-simple-icons-nuxtdotjs"
+        url: "https://www.fogade.gob.ve/"
+        color: "#0262B2"
+    - position: "Analista Programador en"
+      date: "2020 - 2021"
+      company:
+        name: CMMBLDC
+        # logo: "i-simple-icons-raycast"
+        url: "https://www.cmldc.gob.ve/"
+        color: "#021758"
+    - position: "Profesor en"
+      date: "2013 - 2018"
+      company:
+        name: UNE
+        # logo: "i-simple-icons-linear"
+        url: "https://une.edu.ve/"
+        color: "#0E6476"
+faq:
+  title: "Preguntas Frecuentes"
+  description: "Respuestas a preguntas comunes sobre mi trabajo."
+  categories:
+    - title: "Servicios y Proceso"
+      questions:
+        - label: "¿Qué servicios ofreces?"
+          content: |
+            Desarrollo aplicaciones y/o sistemas web. Esto incluye análisis de requerimientos, diseño de bases de datos, desarrollo y despliegue.
+        - label: "¿Cuál es tu metodología de desarrollo?"
+          content: |
+            Sigo una filosofía de desarrollo basada en Scrum, es decir, desarrollos iterativos con prioridad a lo que tiene más valor para el cliente/usuario.
+        - label: "¿Qué tipo de trabajo te interesa?"
+          content: |
+            Estoy interesado en cualquier tipo de trabajo, pero principalmente remoto o por proyectos. También estoy interesado en puestos a tiempo completo o presenciales.
+    - title: "Herramientas y Tecnologías"
+      questions:
+        - label: "¿Cuál es tu stack de desarrollo?"
+          content: |
+            Mi stack favorito es: Laravel + Vue + TypeScript + Tailwind + PostgreSQL. Y Docker para desarrollo y despliegue 😁.
+        - label: "¿Con qué herramientas de desarrollo front-end has trabajado?"
+          content: |
+            Principalmente JavaScript y Vue Js. También hice pequeñas aplicaciones con React Js y Nuxt. Recientemente estoy trabajando con TypeScript y Tailwind CSS.
+        - label: "¿Alguna vez has desarrollado con Python?"
+          content: |
+            Sí, he desarrollado una aplicación con Django como método de autoaprendizaje, aquí está el repositorio: https://gitlab.com/profemaik/python-django-certipro
+        - label: "¿Usas alguna tecnología de IA?"
+          content: |
+            Sí. Principalmente Gemini y DeepSeek.
+        - label: "¿Has trabajado con Docker?"
+          content: |
+            Sí. He contenedorizado aplicaciones usando Docker para ser desplegadas en entornos de producción.

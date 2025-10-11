@@ -1,12 +1,12 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      light: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      dark: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreigmxjgzfi3ilrgxn3x6vakljhl3tv5qqd4tddcro54gyash6hpyz4@jpeg',
+      light: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreigmxjgzfi3ilrgxn3x6vakljhl3tv5qqd4tddcro54gyash6hpyz4@jpeg',
       alt: 'My profile picture'
     },
-    meetingLink: 'https://cal.com/',
-    email: 'ui-pro@nuxt.com',
+    meetingLink: 'https://meet.google.com/',
+    email: 'mcarballo@tutanota.com',
     available: true
   },
   ui: {
@@ -27,19 +27,19 @@ export default defineAppConfig({
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-discord',
-      'to': 'https://go.nuxt.com/discord',
+      'to': 'https://discord.gg/TTAKNqpagT',
       'target': '_blank',
-      'aria-label': 'Nuxt on Discord'
+      'aria-label': 'Maikel on Discord'
     }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://go.nuxt.com/x',
+      'icon': 'i-simple-icons-bluesky',
+      'to': 'https://bsky.app/profile/maikel-dev.bsky.social',
       'target': '_blank',
-      'aria-label': 'Nuxt on X'
+      'aria-label': 'Maikel on X'
     }, {
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
+      'to': 'https://github.com/kimael-code',
       'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
+      'aria-label': 'Maikel UI on GitHub'
     }]
   }
 })

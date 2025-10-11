@@ -1,0 +1,21 @@
+title: About Me
+description: Human being, son, lovely taken, professor, programmer and pro-gamer.
+content: |
+  Hello! I'm Maikel Carballo, a passionate Full Stack Web Developer and IT Professor based in La Guaira, Venezuela. My main goal is to build high-quality software that not only meets technical requirements but also streamlines processes and delivers real value to organizations.
+
+  ### The Programmer & Professor
+
+  With a solid track record of over five years, I have had the privilege of collaborating with major public sector institutions in Venezuela. I currently serve as a Systems Analyst at a public financial institution, responsible for developing and maintaining critical applications for internal process management. Using technologies like: PHP (Laravel, Yii2), Vue.js, Inertia.js, PostgreSQL and Docker. My experience also includes my role as a Programmer Analyst. Additionally, I have cultivated my passion for teaching as a Programming Professor at Universidad Nueva Esparta, contributing to the education of future talent in the technology field.
+
+  ### Beyond the Screen
+
+  When I'm not programming, I might be playing Dragonheir: Silent Gods 🎮, spending time with my loved ones 💞, listening to good music 🎵, or taking photos 📸.
+
+  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to contact me!
+images:
+  - src: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreieblic7zt6i4qzqr5nzey6scf3zbttdojycxlxwz2euzfho7n63sq@jpeg
+    alt: Trying to capture beauty
+  - src: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreidtoxkzivfrtjctceo2b7f62hqhhiq6c533hf7zsl7sbm3qtuidjy@jpeg
+    alt: I miss this flower
+  - src: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreidtge4ugb57eqyndowkk6lsw6wemvg6w2uvj4gjvx2oztfhxtpqsi@jpeg
+    alt: Something happened?
