@@ -13,11 +13,17 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'en', name: 'English', language: 'en-US', dir: 'ltr' },
-      { code: 'es', name: 'Spanish', language: 'es-VE', dir: 'ltr' },
+      { code: 'en', name: 'English', language: 'en-US', dir: 'ltr', file: 'en.json' },
+      { code: 'es', name: 'Spanish', language: 'es-VE', dir: 'ltr', file: 'es.json' },
     ],
-    strategy: 'prefix_and_default',
-    defaultLocale: 'es',
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: true,
+    },
   },
 
   devtools: {

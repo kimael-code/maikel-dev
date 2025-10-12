@@ -2,5 +2,6 @@ title: Proyectos Personales, Aprendiendo tecnologías.
 description: Aquí puedes encontrar una selección de mis proyectos personales, algunos de los cuales están en desarrollo activo. Siéntete libre de explorar el código y las soluciones que he desarrollado.
 links:
   - label: "Hablemos"
-    color: "neutral"
+  - color: "neutral"
   - label: 'Envíame un correo'
+language: "es"

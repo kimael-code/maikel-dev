@@ -4,3 +4,4 @@ image: /hero/roble-dashboard.avif
 url: "https://github.com/kimael-code/roble-vue-tailwind"
 tags: ["dashboard", "laravel", "vue", "tailwind", "postgresql"]
 date: "2026"
+language: "en"

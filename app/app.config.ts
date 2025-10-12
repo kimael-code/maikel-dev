@@ -5,7 +5,7 @@ export default defineAppConfig({
       light: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreigmxjgzfi3ilrgxn3x6vakljhl3tv5qqd4tddcro54gyash6hpyz4@jpeg',
       alt: 'My profile picture'
     },
-    meetingLink: 'https://meet.google.com/',
+    meetingLink: 'https://discord.gg/TTAKNqpagT',
     email: 'mcarballo@tutanota.com',
     available: true
   },

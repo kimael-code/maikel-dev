@@ -1,7 +1,14 @@
 <script setup lang="ts">
+const { locale } = useI18n()
+
 const { data: page } = await useAsyncData('projects-page', () => {
-  return queryCollection('pages').path('/projects').first()
+  return queryCollection('pages')
+    .where('language', '=', locale.value)
+    .first()
+}, {
+  watch: [locale]
 })
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -11,7 +18,13 @@ if (!page.value) {
 }
 
 const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').order('date', 'DESC').all()
+  // Filtrar proyectos por idioma actual
+  return queryCollection('projects')
+    .where('language', '=', locale.value)
+    .order('date', 'DESC')
+    .all()
+}, {
+  watch: [locale] // Refetch cuando cambie el idioma
 })
 
 const { global } = useAppConfig()
@@ -89,7 +102,7 @@ useSeoMeta({
               class="text-sm text-primary flex items-center"
               target="_blank"
             >
-              View Project
+              {{ $t('View Project') }}
               <UIcon
                 name="i-lucide-arrow-right"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"

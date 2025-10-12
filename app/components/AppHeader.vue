@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
+import { en, es } from '@nuxt/ui/locale'
 
 defineProps<{
   links: NavigationMenuItem[]
 }>()
+
+const { locale, setLocale } = useI18n()
 </script>
 
 <template>
@@ -20,7 +23,13 @@ defineProps<{
     >
       <template #list-trailing>
         <ColorModeButton />
+        <ULocaleSelect
+          v-model="locale"
+          :locales="[en, es]"
+          @update:model-value="setLocale($event)"
+        />
       </template>
+      <template #right></template>
     </UNavigationMenu>
   </div>
 </template>

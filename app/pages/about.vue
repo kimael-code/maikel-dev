@@ -1,7 +1,14 @@
 <script setup lang="ts">
+const { locale } = useI18n()
+
 const { data: page } = await useAsyncData('about', () => {
-  return queryCollection('about').first()
+  return queryCollection('about')
+    .where('language', '=', locale.value)
+    .first()
+}, {
+  watch: [locale]
 })
+
 if (!page.value) {
   throw createError({
     statusCode: 404,

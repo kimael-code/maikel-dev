@@ -42,7 +42,7 @@ experience:
         name: UNE
         # logo: "i-simple-icons-linear"
         url: "https://une.edu.ve/"
-        color: "#0E6476"
+        color: "#9b9b2c"
 faq:
   title: "Preguntas Frecuentes"
   description: "Respuestas a preguntas comunes sobre mi trabajo."
@@ -75,3 +75,4 @@ faq:
         - label: "¿Has trabajado con Docker?"
           content: |
             Sí. He contenedorizado aplicaciones usando Docker para ser desplegadas en entornos de producción.
+language: es

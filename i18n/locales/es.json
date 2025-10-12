@@ -1,0 +1,16 @@
+{
+  "About": "Sobre Mí",
+  "Home": "Inicio",
+  "Projects": "Proyectos",
+  "View Project": "Ver Proyecto",
+  "Available for new projects": "Disponible para nuevos proyectos",
+  "seo": {
+    "titleTemplate": "%s - Portafolio de Maikel Carballo",
+    "error": {
+      "title": "Página no encontrada",
+      "description": "Lo sentimos, pero esta página no pudo ser encontrada."
+    },
+    "defaultDescription": "Desarrollador Web Full Stack con más de 5 años de experiencia construyendo aplicaciones web robustas.",
+    "keywords": "Desarrollador Full Stack, PHP, Laravel, Vue.js, PostgreSQL, TypeScript, Desarrollo Web"
+  }
+}

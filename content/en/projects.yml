@@ -2,5 +2,6 @@ title: Personal Projects, Learning technologies.
 description: Here you can find a selection of my personal projects, some of which are under active development. Feel free to explore the code and the solutions I've developed.
 links:
   - label: "Let's talk"
-    color: "neutral"
+  - color: "neutral"
   - label: 'Email me'
+language: "en"

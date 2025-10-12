@@ -1,0 +1,16 @@
+{
+  "About": "About",
+  "Home": "Home",
+  "Projects": "Projects",
+  "View Project": "View Project",
+  "Available for new projects": "Available for new projects",
+  "seo": {
+    "titleTemplate": "%s - Maikel Carballo Portfolio",
+    "error": {
+      "title": "Page not found",
+      "description": "We are sorry but this page could not be found."
+    },
+    "defaultDescription": "Full Stack Web Developer with over 5 years of experience building robust web applications.",
+    "keywords": "Full Stack Developer, PHP, Laravel, Vue.js, PostgreSQL, TypeScript, Web Development"
+  }
+}

@@ -20,6 +20,12 @@ const createImageSchema = () => z.object({
   alt: z.string()
 })
 
+const createSeoSchema = () => z.object({
+  title: z.string().optional(),
+  description: z.string().optional(),
+  keywords: z.string().optional()
+})
+
 export default defineContentConfig({
   collections: {
     // English content collection
@@ -30,6 +36,7 @@ export default defineContentConfig({
         prefix: '',
       },
       schema: z.object({
+        seo: createSeoSchema().optional(),
         hero: z.object({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())
@@ -69,6 +76,7 @@ export default defineContentConfig({
         prefix: '',
       },
       schema: z.object({
+        seo: createSeoSchema().optional(),
         hero: z.object({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())
@@ -102,31 +110,43 @@ export default defineContentConfig({
     }),
     projects: defineCollection({
       type: 'data',
-      source: 'projects/*.yml',
+      source: [
+        { include: 'en/projects/*.yml'},
+        { include: 'es/projects/*.yml' }
+      ],
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
         url: z.string().nonempty(),
         tags: z.array(z.string()),
-        date: z.date()
+        date: z.date(),
+        language: z.enum(['en', 'es']),
       })
     }),
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'projects.yml' },
+        { include: 'en/projects.yml' },
+        { include: 'es/projects.yml' }
       ],
       schema: z.object({
-        links: z.array(createButtonSchema())
+        title: z.string(),
+        description: z.string(),
+        links: z.array(createButtonSchema()),
+        language: z.enum(['en', 'es']).optional().default('en')
       })
     }),
     about: defineCollection({
       type: 'page',
-      source: 'about.yml',
+      source: [
+        { include: 'en/about.yml' },
+        { include: 'es/about.yml' }
+      ],
       schema: z.object({
         content: z.object({}),
-        images: z.array(createImageSchema())
+        images: z.array(createImageSchema()),
+        language: z.enum(['en', 'es'])
       })
     })
   }

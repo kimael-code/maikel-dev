@@ -4,3 +4,4 @@ image: /hero/scbmk-1.avif
 url: "https://gitlab.com/profemaik/php-codeigniter-scbmk"
 tags: ["dashboard", "codeigniter", "javascript", "bootstrap", "postgresql"]
 date: "2022"
+language: "es"

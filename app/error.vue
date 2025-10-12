@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
+const { locale, t } = useI18n()
+
 defineProps({
   error: {
     type: Object as PropType<NuxtError>,
@@ -10,37 +12,19 @@ defineProps({
 
 useHead({
   htmlAttrs: {
-    lang: 'en'
+    lang: locale.value
   }
 })
 
 useSeoMeta({
-  title: 'Page not found',
-  description: 'We are sorry but this page could not be found.'
+  title: t('seo.error.title'),
+  description: t('seo.error.description')
 })
-
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
-    return Promise.all([
-      queryCollectionNavigation('blog')
-    ])
-  }, {
-    transform: data => data.flat()
-  }),
-  useLazyAsyncData('search', () => {
-    return Promise.all([
-      queryCollectionSearchSections('blog')
-    ])
-  }, {
-    server: false,
-    transform: data => data.flat()
-  })
-])
 </script>
 
 <template>
   <div>
-    <AppHeader :links="navLinks" />
+    <AppHeader :links="navLinks()" />
 
     <UMain>
       <UContainer>
@@ -54,9 +38,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
 
     <ClientOnly>
       <LazyUContentSearch
-        :files="files"
         shortcut="meta_k"
-        :navigation="navigation"
         :links="navLinks"
         :fuse="{ resultLimit: 42 }"
       />

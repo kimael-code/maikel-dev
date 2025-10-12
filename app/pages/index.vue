@@ -1,7 +1,14 @@
 <script setup lang="ts">
+const { locale } = useI18n()
+const { getCollectionName } = useContentCollections()
+
 const { data: page } = await useAsyncData('index', () => {
-  return queryCollection('content_en').path('/').first()
+  const collectionName = getCollectionName()
+  return queryCollection(collectionName).path('/').first()
+}, {
+  watch: [locale]
 })
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -10,11 +17,13 @@ if (!page.value) {
   })
 }
 
+const pageData = page.value as any
+
 useSeoMeta({
-  title: page.value?.seo.title || page.value?.title,
-  ogTitle: page.value?.seo.title || page.value?.title,
-  description: page.value?.seo.description || page.value?.description,
-  ogDescription: page.value?.seo.description || page.value?.description
+  title: pageData?.seo.title || pageData?.title,
+  ogTitle: pageData?.seo.title || pageData?.title,
+  description: pageData?.seo.description || pageData?.description,
+  ogDescription: pageData?.seo.description || pageData?.description
 })
 </script>
 
@@ -29,8 +38,6 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
-    <!-- <LandingBlog :page /> -->
-    <!-- <LandingTestimonials :page /> -->
     <LandingFAQ :page />
   </UPage>
 </template>

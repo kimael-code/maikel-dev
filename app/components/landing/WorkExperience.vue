@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { ContentEnCollectionItem, ContentEsCollectionItem } from '@nuxt/content';
 
 defineProps<{
-  page: IndexCollectionItem
+  page: ContentEnCollectionItem | ContentEsCollectionItem
 }>()
 </script>
 
@@ -43,7 +43,6 @@ defineProps<{
               :style="{ color: experience.company.color }"
             >
               <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
             </div>
           </ULink>
         </Motion>
