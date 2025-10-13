@@ -24,7 +24,7 @@ useSeoMeta({
   titleTemplate: t('seo.titleTemplate'),
   ogImage: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreigmxjgzfi3ilrgxn3x6vakljhl3tv5qqd4tddcro54gyash6hpyz4@jpeg',
   twitterImage: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreigmxjgzfi3ilrgxn3x6vakljhl3tv5qqd4tddcro54gyash6hpyz4@jpeg',
-  twitterCard: 'summary_large_image'
+  twitterCard: 'player'
 })
 </script>
 
