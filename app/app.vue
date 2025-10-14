@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import * as locales from '@nuxt/ui/locale'
+// import * as locales from '@nuxt/ui/locale'
 
 const { locale, t } = useI18n()
 const colorMode = useColorMode()
@@ -36,7 +36,8 @@ watch(locale, async (newLocale) => {
 </script>
 
 <template>
-  <UApp :locale="locales[locale]">
+  <!-- <UApp :locale="locales[locale]"> -->
+  <UApp>
     <NuxtLayout>
       <UMain class="relative">
         <NuxtPage />
