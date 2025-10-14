@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import * as locales from '@nuxt/ui/locale'
+import * as locales from '@nuxt/ui/locale'
 
 const { locale, t } = useI18n()
 const colorMode = useColorMode()
@@ -29,8 +29,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <!-- <UApp :locale="locales[locale]"> -->
-  <UApp>
+  <UApp :locale="locales[locale]">
     <NuxtLayout>
       <UMain class="relative">
         <NuxtPage />
