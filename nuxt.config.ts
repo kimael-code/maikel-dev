@@ -29,9 +29,9 @@ export default defineNuxtConfig({
     // baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app',
   },
 
-  app: {
-    baseURL: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app',
-  },
+  // app: {
+  //   baseURL: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app',
+  // },
 
   devtools: {
     enabled: true
