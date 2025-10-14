@@ -16,6 +16,8 @@ export default defineNuxtConfig({
       { code: 'en', name: 'English', language: 'en-US', dir: 'ltr', file: 'en.json' },
       { code: 'es', name: 'Spanish', language: 'es-VE', dir: 'ltr', file: 'es.json' },
     ],
+    // lazy: true,
+    // langDir: 'i18n/locales/',
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
     detectBrowserLanguage: {
@@ -24,7 +26,7 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       alwaysRedirect: true,
     },
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app',
+    // baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app',
   },
 
   app: {
@@ -42,9 +44,32 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        '/'
+        '/',
+        '/es',
+        '/es/about',
+        '/es/projects',
+        '/about',
+        '/projects'
       ],
       crawlLinks: true
+    }
+  },
+
+  hooks: {
+    async 'prerender:routes'(ctx) {
+      // Prerenderizar rutas para ambos idiomas
+      const routes = ['/', '/about', '/projects']
+      const locales = ['en', 'es']
+
+      for (const locale of locales) {
+        for (const route of routes) {
+          if (locale === 'en') {
+            ctx.routes.add(route)
+          } else {
+            ctx.routes.add(`/${locale}${route}`)
+          }
+        }
+      }
     }
   },
 
