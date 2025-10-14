@@ -29,7 +29,6 @@ const { locale, setLocale } = useI18n()
           @update:model-value="setLocale($event)"
         />
       </template>
-      <template #right></template>
     </UNavigationMenu>
   </div>
 </template>

@@ -18,13 +18,12 @@ if (!page.value) {
 }
 
 const { data: projects } = await useAsyncData('projects', () => {
-  // Filtrar proyectos por idioma actual
   return queryCollection('projects')
     .where('language', '=', locale.value)
     .order('date', 'DESC')
     .all()
 }, {
-  watch: [locale] // Refetch cuando cambie el idioma
+  watch: [locale]
 })
 
 const { global } = useAppConfig()

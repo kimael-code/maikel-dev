@@ -20,23 +20,29 @@ const createImageSchema = () => z.object({
   alt: z.string()
 })
 
-const createSeoSchema = () => z.object({
-  title: z.string().optional(),
+const createAuthorSchema = () => z.object({
+  name: z.string(),
   description: z.string().optional(),
-  keywords: z.string().optional()
+  username: z.string().optional(),
+  twitter: z.string().optional(),
+  to: z.string().optional(),
+  avatar: createImageSchema().optional()
+})
+
+const createTestimonialSchema = () => z.object({
+  quote: z.string(),
+  author: createAuthorSchema()
 })
 
 export default defineContentConfig({
   collections: {
-    // English content collection
-    content_en: defineCollection({
+    index: defineCollection({
       type: 'page',
-      source: {
-        include: 'en/**',
-        prefix: '',
-      },
+      source: [
+        { include: 'en/index.yml' },
+        { include: 'es/index.yml' },
+      ],
       schema: z.object({
-        seo: createSeoSchema().optional(),
         hero: z.object({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())
@@ -49,7 +55,6 @@ export default defineContentConfig({
             company: z.object({
               name: z.string(),
               url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
               color: z.string()
             })
           }))
@@ -65,54 +70,15 @@ export default defineContentConfig({
                 })
               )
             }))
-        })
-      })
-    }),
-    // Spanish content collection
-    content_es: defineCollection({
-      type: 'page',
-      source: {
-        include: 'es/**',
-        prefix: '',
-      },
-      schema: z.object({
-        seo: createSeoSchema().optional(),
-        hero: z.object({
-          links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema())
         }),
-        about: createBaseSchema(),
-        experience: createBaseSchema().extend({
-          items: z.array(z.object({
-            date: z.date(),
-            position: z.string(),
-            company: z.object({
-              name: z.string(),
-              url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
-            })
-          }))
-        }),
-        faq: createBaseSchema().extend({
-          categories: z.array(
-            z.object({
-              title: z.string().nonempty(),
-              questions: z.array(
-                z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty()
-                })
-              )
-            }))
-        })
+        language: z.enum(['en', 'es']),
       })
     }),
     projects: defineCollection({
       type: 'data',
       source: [
-        { include: 'en/projects/*.yml'},
-        { include: 'es/projects/*.yml' }
+        { include: 'en/projects/*.yml' },
+        { include: 'es/projects/*.yml' },
       ],
       schema: z.object({
         title: z.string().nonempty(),
@@ -128,25 +94,23 @@ export default defineContentConfig({
       type: 'page',
       source: [
         { include: 'en/projects.yml' },
-        { include: 'es/projects.yml' }
+        { include: 'es/projects.yml' },
       ],
       schema: z.object({
-        title: z.string(),
-        description: z.string(),
         links: z.array(createButtonSchema()),
-        language: z.enum(['en', 'es']).optional().default('en')
+        language: z.enum(['en', 'es']),
       })
     }),
     about: defineCollection({
       type: 'page',
       source: [
         { include: 'en/about.yml' },
-        { include: 'es/about.yml' }
+        { include: 'es/about.yml' },
       ],
       schema: z.object({
         content: z.object({}),
         images: z.array(createImageSchema()),
-        language: z.enum(['en', 'es'])
+        language: z.enum(['en', 'es']),
       })
     })
   }

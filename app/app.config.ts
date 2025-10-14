@@ -1,8 +1,8 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreigmxjgzfi3ilrgxn3x6vakljhl3tv5qqd4tddcro54gyash6hpyz4@jpeg',
-      light: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreigmxjgzfi3ilrgxn3x6vakljhl3tv5qqd4tddcro54gyash6hpyz4@jpeg',
+      dark: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
+      light: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
       alt: 'My profile picture'
     },
     meetingLink: 'https://discord.gg/TTAKNqpagT',
@@ -34,12 +34,12 @@ export default defineAppConfig({
       'icon': 'i-simple-icons-bluesky',
       'to': 'https://bsky.app/profile/maikel-dev.bsky.social',
       'target': '_blank',
-      'aria-label': 'Maikel on X'
+      'aria-label': 'Maikel on Bluesky'
     }, {
       'icon': 'i-simple-icons-github',
       'to': 'https://github.com/kimael-code',
       'target': '_blank',
-      'aria-label': 'Maikel UI on GitHub'
+      'aria-label': 'Maikel on GitHub'
     }]
   }
 })
