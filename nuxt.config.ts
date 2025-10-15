@@ -16,6 +16,7 @@ export default defineNuxtConfig({
       { code: 'en', name: 'English', language: 'en-US', dir: 'ltr', file: 'en.json' },
       { code: 'es', name: 'Spanish', language: 'es-VE', dir: 'ltr', file: 'es.json' },
     ],
+    baseUrl: 'https://maikel-dev.vercel.app',
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
     detectBrowserLanguage: {

@@ -21,7 +21,7 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: t('seo.titleTemplate'),
+  titleTemplate: () => t('seo.titleTemplate'),
   ogImage: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
   twitterImage: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
   twitterCard: 'player'
