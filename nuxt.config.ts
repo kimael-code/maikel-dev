@@ -24,11 +24,11 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       alwaysRedirect: true,
     },
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app',
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app/',
   },
 
   app: {
-    baseURL: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app',
+    baseURL: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app/',
   },
 
   devtools: {
