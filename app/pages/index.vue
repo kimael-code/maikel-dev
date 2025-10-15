@@ -5,6 +5,7 @@ const { locale } = useI18n()
 console.log('Current locale:', locale.value)
 
 const { data: page } = await useAsyncData('index', () => {
+  console.log('Locale inside useAsyncData:', locale.value)
   return queryCollection('index')
     .where('language', '=', locale.value)
     .first()
