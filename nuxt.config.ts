@@ -24,7 +24,6 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       alwaysRedirect: true,
     },
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://maikel-dev.vercel.app',
   },
 
   devtools: {
@@ -46,6 +45,23 @@ export default defineNuxtConfig({
         '/projects'
       ],
       crawlLinks: true
+    }
+  },
+
+  hooks: {
+    async 'prerender:routes'(ctx) {
+      const routes = ['/', '/about', '/projects']
+      const locales = ['en', 'es']
+
+      for (const locale of locales) {
+        for (const route of routes) {
+          if (locale === 'en') {
+            ctx.routes.add(route)
+          } else {
+            ctx.routes.add(`/${locale}${route}`)
+          }
+        }
+      }
     }
   },
 
