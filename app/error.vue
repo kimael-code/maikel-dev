@@ -17,8 +17,8 @@ useHead({
 })
 
 useSeoMeta({
-  title: () => t('seo.error.title'),
-  description: () => t('seo.error.description')
+  title: t('seo.error.title'),
+  description: t('seo.error.description')
 })
 </script>
 
