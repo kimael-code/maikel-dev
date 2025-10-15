@@ -5,8 +5,6 @@ const { data: page } = await useAsyncData(`index-${locale.value}`, () => {
   return queryCollection('index')
     .where('language', '=', locale.value)
     .first()
-}, {
-  watch: [locale]
 })
 
 if (!page.value) {
