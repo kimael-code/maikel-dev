@@ -18,12 +18,12 @@ export default defineNuxtConfig({
     ],
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-      alwaysRedirect: true,
-    },
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   cookieKey: 'i18n_redirected',
+    //   redirectOn: 'root',
+    //   alwaysRedirect: true,
+    // },
   },
 
   devtools: {
@@ -45,23 +45,6 @@ export default defineNuxtConfig({
         '/projects'
       ],
       crawlLinks: true
-    }
-  },
-
-  hooks: {
-    async 'prerender:routes'(ctx) {
-      const routes = ['/', '/about', '/projects']
-      const locales = ['en', 'es']
-
-      for (const locale of locales) {
-        for (const route of routes) {
-          if (locale === 'en') {
-            ctx.routes.add(route)
-          } else {
-            ctx.routes.add(`/${locale}${route}`)
-          }
-        }
-      }
     }
   },
 
