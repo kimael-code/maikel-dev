@@ -1,12 +1,10 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 
-const { data: page } = await useAsyncData('projects-page', () => {
+const { data: page } = await useAsyncData(`projects-page-${locale.value}`, () => {
   return queryCollection('pages')
     .where('language', '=', locale.value)
     .first()
-}, {
-  watch: [locale]
 })
 
 if (!page.value) {
@@ -17,13 +15,11 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData('projects', () => {
+const { data: projects } = await useAsyncData(`projects-${locale.value}`, () => {
   return queryCollection('projects')
     .where('language', '=', locale.value)
     .order('date', 'DESC')
     .all()
-}, {
-  watch: [locale]
 })
 
 const { global } = useAppConfig()

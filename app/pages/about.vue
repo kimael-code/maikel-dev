@@ -1,12 +1,10 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 
-const { data: page } = await useAsyncData('about', () => {
+const { data: page } = await useAsyncData(`about-${locale.value}`, () => {
   return queryCollection('about')
     .where('language', '=', locale.value)
     .first()
-}, {
-  watch: [locale]
 })
 
 if (!page.value) {
