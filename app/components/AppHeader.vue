@@ -7,6 +7,11 @@ defineProps<{
 }>()
 
 const { locale, setLocale } = useI18n()
+
+function onLocaleChange (event: string | undefined) {
+  if (event)
+    setLocale(event as 'en' | 'es')
+}
 </script>
 
 <template>
@@ -24,9 +29,11 @@ const { locale, setLocale } = useI18n()
       <template #list-trailing>
         <ColorModeButton />
         <ULocaleSelect
+          size="xs"
+          variant="subtle"
           v-model="locale"
           :locales="[en, es]"
-          @update:model-value="setLocale($event)"
+          @update:model-value="onLocaleChange"
         />
       </template>
     </UNavigationMenu>
