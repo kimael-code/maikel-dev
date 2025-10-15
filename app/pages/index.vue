@@ -1,19 +1,11 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 
-// Debug
-console.log('Current locale:', locale.value)
-
-const { data: page } = await useAsyncData('index', () => {
-  console.log('Locale inside useAsyncData:', locale.value)
+const { data: page } = await useAsyncData(`index-${locale.value}`, () => {
   return queryCollection('index')
     .where('language', '=', locale.value)
     .first()
-}, {
-  watch: [locale]
 })
-
-console.log('Page data:', page.value)
 
 if (!page.value) {
   throw createError({
