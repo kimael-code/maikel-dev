@@ -50,10 +50,18 @@ useSeoMeta({
         container: '!pt-0'
       }"
     >
-      <MDC
-        :value="page.content"
-        unwrap="p"
-      />
+      <Motion
+        :initial="{ opacity: 0, y: 10 }"
+        :animate="{ opacity: 1, y: 0 }"
+        :transition="{
+          delay: 0.2,
+          ease: 'easeOut'
+      }">
+        <MDC
+          :value="page.content"
+          unwrap="p"
+        />
+      </Motion>
       <div class="flex flex-row justify-center items-center py-10 space-x-[-2rem]">
         <PolaroidItem
           v-for="(image, index) in page.images"
