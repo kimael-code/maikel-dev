@@ -2,7 +2,7 @@ seo:
   title: "Maikel Carballo - Desarrollador Web Full Stack"
   description: "Portafolio de Maikel Carballo, un Desarrollador Web Full Stack con más de 5 años de experiencia. Programador en PHP, Laravel, Vue.js y PostgreSQL. Descubre mis proyectos y experiencia."
   keywords: "Desarrollador Web Full Stack, Desarrollador PHP, Desarrollador Laravel, Programador de Venezuela, Maikel Carballo, Portafolio de Desarrollador, Vue.js, Inertia.js, PostgreSQL, TypeScript, Nuxt."
-title: "Maikel Carballo: Desarrollador Web Full Stack y Profesor de TI"
+title: "Maikel Carballo: Desarrollador Web Full Stack y Profesor de Informática"
 description: "Construyendo soluciones web robustas, escalables y seguras para optimizar procesos. Más de 5 años de experiencia convirtiendo ideas en aplicaciones web eficientes."
 hero:
   images:
@@ -17,7 +17,7 @@ hero:
 about:
   title: "Sobre Mí"
   description: |
-    ¡Hola! Soy Maikel Carballo, un apasionado Desarrollador Web Full Stack y Profesor de TI residenciado en La Guaira, Venezuela.
+    ¡Hola! Soy Maikel Carballo, un apasionado Desarrollador Web Full Stack y Profesor de Informática residenciado en La Guaira, Venezuela.
     Mi objetivo principal es construir software de alta calidad que no solo cumpla con los requisitos técnicos, sino que también agilice los procesos y entregue valor real a las organizaciones.
 experience:
   title: "Experiencia Laboral"
