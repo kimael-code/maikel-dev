@@ -35,12 +35,7 @@ useSeoMeta({
   <UApp>
     <NuxtLayout>
       <UMain class="relative">
-        <NuxtPage
-          :transition="{
-            name: 'page',
-            mode: 'out-in',
-          }"
-        />
+        <NuxtPage />
       </UMain>
     </NuxtLayout>
   </UApp>
