@@ -36,8 +36,10 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      // Ignora la ruta raíz para que sea manejada dinámicamente por el servidor Nitro.
+      // Esto permite que la redirección de idioma del lado del servidor funcione correctamente.
+      ignore: ['/'],
       routes: [
-        '/',
         '/es',
         '/es/about',
         '/es/projects',
