@@ -1,0 +1,7 @@
+title: Roble Docker Infrastructure
+description: Production-grade infrastructure stack optimized for Roble and Laravel + Vue ecosystems. Features automatic SSL (Let's Encrypt), WSS WebSockets (Reverb), Inertia SSR, and 68% size reduction through multi-stage builds.
+image: /hero/infra-roble-terminal-1.avif
+url: "https://github.com/kimael-code/infraestructura-roble"
+tags: ["docker", "devops", "laravel", "ssl", "automation"]
+date: 2026-01-19
+language: en

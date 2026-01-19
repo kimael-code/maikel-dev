@@ -1,0 +1,7 @@
+title: Participación Nuxt
+description: Dashboard interactivo para la gestión de datos empresariales, construido con Nuxt 4 y ECharts para visualización en tiempo real. Incluye autenticación segura y optimización SEO.
+image: /hero/participacion-nuxt.avif
+url: "https://participacion-nuxt.vercel.app"
+tags: ["nuxt", "vue", "dashboard", "typescript", "echarts"]
+date: 2026-01-19
+language: es
