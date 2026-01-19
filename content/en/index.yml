@@ -12,8 +12,14 @@ hero:
       alt: Administrador de usuarios
     - src: /hero/scbmk-1.avif
       alt: Sistema de Control Base mk
+    - src: /hero/participacion-nuxt.avif
+      alt: "Participation Nuxt"
+    - src: /hero/infra-roble-terminal-1.avif
+      alt: "Roble Docker Infrastructure"
+    - src: /hero/infra-roble-terminal-2.avif
+      alt: "Roble Installation Script"
     - src: /hero/status-contable-1.avif
-      alt: Seguimiento de egresos e ingresos
+      alt: "Seguimiento de egresos e ingresos"
 about:
   title: "About Me"
   description: |
@@ -43,6 +49,31 @@ experience:
         # logo: "i-simple-icons-linear"
         url: "https://une.edu.ve/"
         color: "#9b9b2c"
+stack:
+  title: "Core Stack"
+  description: "The central technologies I use to bring modern and robust projects to life."
+  items:
+    - name: "Laravel"
+      icon: "i-simple-icons-laravel"
+      color: "#FF2D20"
+    - name: "Nuxt"
+      icon: "i-simple-icons-nuxtdotjs"
+      color: "#00DC82"
+    - name: "Vue.js"
+      icon: "i-simple-icons-vuedotjs"
+      color: "#4FC08D"
+    - name: "PostgreSQL"
+      icon: "i-simple-icons-postgresql"
+      color: "#4169E1"
+    - name: "TypeScript"
+      icon: "i-simple-icons-typescript"
+      color: "#3178C6"
+    - name: "Tailwind CSS"
+      icon: "i-simple-icons-tailwindcss"
+      color: "#06B6D4"
+    - name: "Docker"
+      icon: "i-simple-icons-docker"
+      color: "#2496ED"
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about my job.
@@ -54,25 +85,19 @@ faq:
             I develop web applications and/or systems. This includes requirements analysis, database design, development, and deployment.
         - label: What is your development methodology?
           content: |
-            I follow a development philosophy based on Scrum, that is, iterative developments with priority given to what has the most value for the client/user.
+            I follow a methodology based on **Scrum** combined with **Spec Driven Development (SDD)**. I focus on defining precise technical specifications to drive development, prioritizing value delivery in fast iterative cycles.
         - label: What type of work are you interested in?
           content: |
             I'm interested in any type of work, but primarily remote or project-based. I'm also interested in full-time or in-person positions.
-    - title: Tools & Technologies
+    - title: "Tech & Philosophy"
       questions:
-        - label: What is your development stack?
+        - label: "What is your development stack?"
           content: |
-            My favorite stack is: Laravel + Vue + TypeScript + Tailwind + PostgreSQL. And Docker for development and deployment 😁.
-        - label: Which front-end development tools have you worked with?
+            My core stack is built on **Laravel, Nuxt, and Vue**. I use these tools for their robustness and efficiency in building scalable applications. I also manage my infrastructure with **Docker**. To see a detailed list of all my tools, you can visit my [About Me](/about) section.
+        - label: "Do you follow any specific methodology?"
           content: |
-            Mostly JavaScript and Vue Js. I also made little apps with React Js and Nuxt. Recently I'm working with TypeScript and Tailwind CSS.
-        - label: Have you ever developed with Python?
+            I apply **Spec Driven Development (SDD)** within a **Scrum** framework. This allows me to transform complex requirements into clear specifications that guide precise and efficient implementation.
+        - label: "How do you integrate AI into your workflow?"
           content: |
-            Yes, I have developed an application with Django as a self-learning method, here is the repository: https://gitlab.com/profemaik/python-django-certipro
-        - label: Do you use any AI technology?
-          content: |
-            Yes, I do. Mostly Gemini and DeepSeek.
-        - label: Have you worked with Docker?
-          content: |
-            Yes, I have. Yes, I have containerized applications using Docker to be deployed in production environments.
+            I leverage state-of-the-art **Agentic AI** (Gemini, Claude 3.5 Sonnet, DeepSeek, Qwen) to enhance code quality, debugging, and optimization. This allows me to focus on advanced architecture and business logic, ensuring speed and robustness.
 language: en

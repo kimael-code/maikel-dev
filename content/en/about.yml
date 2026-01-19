@@ -1,17 +1,71 @@
 title: About Me
 description: Human being, son, lovely taken, professor, pro-grammer and pro-gamer.
-content: |
+intro: |
   Hello! I'm Maikel Carballo, a passionate Full Stack Web Developer and IT Professor based in La Guaira, Venezuela. My main goal is to build high-quality software that not only meets technical requirements but also streamlines processes and delivers real value to organizations.
 
   ### The Programmer & Professor
 
   With a solid track record of over five years, I have had the privilege of collaborating with major public sector institutions in Venezuela. I currently serve as a Systems Analyst at a public financial institution, responsible for developing and maintaining critical applications for internal process management. Using technologies like: PHP (Laravel, Yii2), Vue.js, Inertia.js, PostgreSQL and Docker. My experience also includes my role as a Programmer Analyst. Additionally, I have cultivated my passion for teaching as a Programming Professor at Universidad Nueva Esparta, contributing to the education of future talent in the technology field.
+stack:
+  content: |
+    ### Tools & Technologies
 
+    A detailed look at my entire technical arsenal, from frameworks to design and database tools.
+  items:
+    - name: "Laravel"
+      icon: "i-simple-icons-laravel"
+      color: "#FF2D20"
+    - name: "Nuxt"
+      icon: "i-simple-icons-nuxtdotjs"
+      color: "#00DC82"
+    - name: "Vue.js"
+      icon: "i-simple-icons-vuedotjs"
+      color: "#4FC08D"
+    - name: "PostgreSQL"
+      icon: "i-simple-icons-postgresql"
+      color: "#4169E1"
+    - name: "TypeScript"
+      icon: "i-simple-icons-typescript"
+      color: "#3178C6"
+    - name: "Tailwind CSS"
+      icon: "i-simple-icons-tailwindcss"
+      color: "#06B6D4"
+    - name: "Docker"
+      icon: "i-simple-icons-docker"
+      color: "#2496ED"
+    - name: "Ubuntu"
+      icon: "i-simple-icons-ubuntu"
+      color: "#E95420"
+    - name: "Git"
+      icon: "i-simple-icons-git"
+      color: "#F05032"
+    - name: "GitHub"
+      icon: "i-simple-icons-github"
+      color: "#181717"
+    - name: "GitLab"
+      icon: "i-simple-icons-gitlab"
+      color: "#FC6D26"
+    - name: "JavaScript"
+      icon: "i-simple-icons-javascript"
+      color: "#F7DF1E"
+    - name: "HTML5"
+      icon: "i-simple-icons-html5"
+      color: "#E34F26"
+    - name: "CSS3"
+      icon: "i-simple-icons-css3"
+      color: "#1572B6"
+    - name: "DBeaver"
+      icon: "i-simple-icons-dbeaver"
+      color: "#382923"
+    - name: "VS Code"
+      icon: "i-simple-icons-visualstudiocode"
+      color: "#007ACC"
+personal: |
   ### Beyond the Screen
 
   When I'm not programming... I might be playing Dragonheir: Silent Gods 🎮, spending time with my loved ones 💞, listening to good music 🎵, or taking photos 📸.
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to contact me!
+  Thank you for taking an interest in my professional journey. If you feel my experience and approach can help bring your next big idea to life or solve a complex technical challenge, I'd love to [chat](/#contact)! Don't forget to take a look at my [projects](/projects).
 images:
   - src: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreieblic7zt6i4qzqr5nzey6scf3zbttdojycxlxwz2euzfho7n63sq@jpeg
     alt: Trying to capture beauty

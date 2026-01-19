@@ -12,6 +12,12 @@ hero:
       alt: "Administrador de usuarios"
     - src: /hero/scbmk-1.avif
       alt: "Sistema de Control Base mk"
+    - src: /hero/participacion-nuxt.avif
+      alt: "Participación Nuxt"
+    - src: /hero/infra-roble-terminal-1.avif
+      alt: "Infraestructura Docker Roble"
+    - src: /hero/infra-roble-terminal-2.avif
+      alt: "Script de Instalación Roble"
     - src: /hero/status-contable-1.avif
       alt: "Seguimiento de egresos e ingresos"
 about:
@@ -43,6 +49,31 @@ experience:
         # logo: "i-simple-icons-linear"
         url: "https://une.edu.ve/"
         color: "#9b9b2c"
+stack:
+  title: "Mi Stack Principal"
+  description: "Las tecnologías centrales que utilizo para dar vida a proyectos modernos y robustos."
+  items:
+    - name: "Laravel"
+      icon: "i-simple-icons-laravel"
+      color: "#FF2D20"
+    - name: "Nuxt"
+      icon: "i-simple-icons-nuxtdotjs"
+      color: "#00DC82"
+    - name: "Vue.js"
+      icon: "i-simple-icons-vuedotjs"
+      color: "#4FC08D"
+    - name: "PostgreSQL"
+      icon: "i-simple-icons-postgresql"
+      color: "#4169E1"
+    - name: "TypeScript"
+      icon: "i-simple-icons-typescript"
+      color: "#3178C6"
+    - name: "Tailwind CSS"
+      icon: "i-simple-icons-tailwindcss"
+      color: "#06B6D4"
+    - name: "Docker"
+      icon: "i-simple-icons-docker"
+      color: "#2496ED"
 faq:
   title: "Preguntas Frecuentes"
   description: "Respuestas a preguntas comunes sobre mi trabajo."
@@ -54,25 +85,19 @@ faq:
             Desarrollo aplicaciones y/o sistemas web. Esto incluye análisis de requerimientos, diseño de bases de datos, desarrollo y despliegue.
         - label: "¿Cuál es tu metodología de desarrollo?"
           content: |
-            Sigo una filosofía de desarrollo basada en Scrum, es decir, desarrollos iterativos con prioridad a lo que tiene más valor para el cliente/usuario.
+            Sigo una filosofía basada en **Scrum** combinada con **Spec Driven Development (SDD)**. Me enfoco en definir especificaciones técnicas precisas para guiar el desarrollo, priorizando siempre la entrega de valor en ciclos iterativos rápidos.
         - label: "¿Qué tipo de trabajo te interesa?"
           content: |
             Estoy interesado en cualquier tipo de trabajo, pero principalmente remoto o por proyectos. También estoy interesado en puestos a tiempo completo o presenciales.
-    - title: "Herramientas y Tecnologías"
+    - title: "Tecnologías y Filosofía"
       questions:
         - label: "¿Cuál es tu stack de desarrollo?"
           content: |
-            Mi stack favorito es: Laravel + Vue + TypeScript + Tailwind + PostgreSQL. Y Docker para desarrollo y despliegue 😁.
-        - label: "¿Con qué herramientas de desarrollo front-end has trabajado?"
+            Mi stack principal se basa en **Laravel, Nuxt y Vue**. Utilizo estas herramientas por su robustez y eficiencia para construir aplicaciones escalables. Además, gestiono mi infraestructura con **Docker**. Si deseas ver el listado detallado de todas mis herramientas, puedes visitar mi sección [Sobre Mí](/es/about).
+        - label: "¿Sigues alguna metodología específica?"
           content: |
-            Principalmente JavaScript y Vue Js. También hice pequeñas aplicaciones con React Js y Nuxt. Recientemente estoy trabajando con TypeScript y Tailwind CSS.
-        - label: "¿Alguna vez has desarrollado con Python?"
+            Aplico **Spec Driven Development (SDD)** dentro de un marco **Scrum**. Esto me permite transformar requerimientos complejos en especificaciones claras que guían una implementación precisa y eficiente.
+        - label: "¿Cómo integras la IA en tu flujo de trabajo?"
           content: |
-            Sí, he desarrollado una aplicación con Django como método de autoaprendizaje, aquí está el repositorio: https://gitlab.com/profemaik/python-django-certipro
-        - label: "¿Usas alguna tecnología de IA?"
-          content: |
-            Sí. Principalmente Gemini y DeepSeek.
-        - label: "¿Has trabajado con Docker?"
-          content: |
-            Sí. He contenedorizado aplicaciones usando Docker para ser desplegadas en entornos de producción.
+            Utilizo **IA Agéntica** de vanguardia (Gemini, Claude 3.5 Sonnet, DeepSeek, Qwen) para potenciar la calidad del código, el debugging y la optimización. Esto me permite centrarme en la arquitectura avanzada y la lógica de negocio, garantizando rapidez y robustez.
 language: es
