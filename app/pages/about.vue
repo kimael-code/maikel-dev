@@ -1,28 +1,26 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale } = useI18n();
 
 const { data: page } = await useAsyncData(`about-${locale.value}`, () => {
-  return queryCollection('about')
-    .where('language', '=', locale.value)
-    .first()
-})
+  return queryCollection("about").where("language", "=", locale.value).first();
+});
 
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
-    fatal: true
-  })
+    statusMessage: "Page not found",
+    fatal: true,
+  });
 }
 
-const { global } = useAppConfig()
+const { global } = useAppConfig();
 
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
-})
+  ogDescription: page.value?.seo?.description || page.value?.description,
+});
 </script>
 
 <template>
@@ -35,7 +33,7 @@ useSeoMeta({
         container: 'lg:flex sm:flex-row items-center',
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
-        links: 'justify-start'
+        links: 'justify-start',
       }"
     >
       <UColorModeAvatar
@@ -47,7 +45,7 @@ useSeoMeta({
     </UPageHero>
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: '!pt-0',
       }"
     >
       <Motion
@@ -55,21 +53,29 @@ useSeoMeta({
         :animate="{ opacity: 1, y: 0 }"
         :transition="{
           delay: 0.2,
-          ease: 'easeOut'
-      }">
-        <MDC
-          :value="page.content"
-          unwrap="p"
-        />
+          ease: 'easeOut',
+        }"
+      >
+        <MDC :value="page.intro" />
+
+        <template v-if="page.stack">
+          <MDC :value="page.stack.content" />
+          <LandingStack :items="page.stack.items" class="my-8" />
+        </template>
+
+        <MDC :value="page.personal" />
+
+        <div
+          class="flex flex-row justify-center items-center py-10 space-x-[-2rem]"
+        >
+          <PolaroidItem
+            v-for="(image, index) in page.images"
+            :key="index"
+            :image="image"
+            :index
+          />
+        </div>
       </Motion>
-      <div class="flex flex-row justify-center items-center py-10 space-x-[-2rem]">
-        <PolaroidItem
-          v-for="(image, index) in page.images"
-          :key="index"
-          :image="image"
-          :index
-        />
-      </div>
     </UPageSection>
   </UPage>
 </template>

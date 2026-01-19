@@ -34,6 +34,18 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
+    <UPageSection
+      v-if="page.stack"
+      :title="page.stack.title"
+      :description="page.stack.description"
+      :ui="{
+        container: 'px-0 !pt-0 sm:gap-6 lg:gap-8',
+        title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
+        description: 'text-left mt-3 text-sm sm:text-md lg:text-sm text-muted',
+      }"
+    >
+      <LandingStack :items="page.stack.items" />
+    </UPageSection>
     <LandingFAQ :page />
   </UPage>
 </template>
