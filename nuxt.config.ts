@@ -8,23 +8,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
-    '@nuxtjs/i18n',
+    '@nuxtjs/i18n'
   ],
-
-  i18n: {
-    locales: [
-      { code: 'en', name: 'English', language: 'en-US', dir: 'ltr', file: 'en.json' },
-      { code: 'es', name: 'Spanish', language: 'es-VE', dir: 'ltr', file: 'es.json' },
-    ],
-    strategy: 'prefix_except_default',
-    defaultLocale: 'en',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-      alwaysRedirect: true,
-    },
-  },
 
   devtools: {
     enabled: true
@@ -56,6 +41,21 @@ export default defineNuxtConfig({
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  i18n: {
+    locales: [
+      { code: 'en', name: 'English', language: 'en-US', dir: 'ltr', file: 'en.json' },
+      { code: 'es', name: 'Spanish', language: 'es-VE', dir: 'ltr', file: 'es.json' }
+    ],
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: true
     }
   }
 })

@@ -1,13 +1,13 @@
 <script setup lang="ts">
 interface StackItem {
-  name: string;
-  icon: string;
-  color?: string;
+  name: string
+  icon: string
+  color?: string
 }
 
 defineProps<{
-  items?: StackItem[];
-}>();
+  items?: StackItem[]
+}>()
 </script>
 
 <template>
@@ -15,7 +15,11 @@ defineProps<{
     v-if="items"
     class="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-4 xl:grid-cols-6 gap-3"
   >
-    <UTooltip v-for="(tech, index) in items" :key="index" :text="tech.name">
+    <UTooltip
+      v-for="(tech, index) in items"
+      :key="index"
+      :text="tech.name"
+    >
       <div
         class="flex items-center justify-center p-3 rounded-xl border border-default bg-default/5 transition-all duration-300 group hover:bg-default/10 aspect-square"
         :style="{ '--brand-color': tech.color || 'var(--ui-primary)' }"

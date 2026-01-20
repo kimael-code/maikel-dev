@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const { locale, t } = useI18n()
 const colorMode = useColorMode()
 
