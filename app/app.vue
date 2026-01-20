@@ -3,7 +3,7 @@ const { locale, t } = useI18n()
 const colorMode = useColorMode()
 
 const color = computed(() =>
-  colorMode.value === 'dark' ? '#1a2e05' : '#ecfdf5'
+  colorMode.value === 'dark' ? '#1a2e05' : 'white'
 )
 
 useHead({
@@ -11,6 +11,16 @@ useHead({
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { key: 'theme-color', name: 'theme-color', content: color },
+    {
+      name: 'theme-color',
+      content: 'white',
+      media: '(prefers-color-scheme: light)'
+    },
+    {
+      name: 'theme-color',
+      content: '#1a2e05',
+      media: '(prefers-color-scheme: dark)'
+    },
     { name: 'apple-mobile-web-app-capable', content: 'yes' },
     {
       name: 'apple-mobile-web-app-status-bar-style',
