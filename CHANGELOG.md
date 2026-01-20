@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/kimael-code/maikel-dev/compare/v1.0.0...v1.1.0) (2026-01-20)
+
+
+### Features
+
+* **theme:** customize accent color to lime and sync browser theme color ([c9c187e](https://github.com/kimael-code/maikel-dev/commit/c9c187e5a3682029fbe6153f34c7464aee321840))
+
 ## [1.0.0](https://github.com/kimael-code/maikel-dev/compare/v0.0.1...v1.0.0) (2026-01-20)
 
 ### 0.0.1 (2026-01-19)
