@@ -4,8 +4,8 @@
   "description": "Portafolio de Maikel Carballo, un Desarrollador Web Full Stack con más de 5 años de experiencia.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#020618",
-  "theme_color": "#020618",
+  "background_color": "#1a2e05",
+  "theme_color": "#1a2e05",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
