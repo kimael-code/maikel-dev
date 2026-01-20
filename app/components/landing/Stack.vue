@@ -26,7 +26,7 @@ defineProps<{
       >
         <UIcon
           :name="tech.icon"
-          class="size-8 text-muted group-hover:text-[var(--brand-color)] transition-all duration-300 transform group-hover:scale-110"
+          class="size-8 text-muted group-hover:text-[var(--brand-color)] group-active:text-[var(--brand-color)] transition-all duration-300 transform group-hover:scale-110 group-active:scale-110"
         />
       </div>
     </UTooltip>
@@ -34,7 +34,8 @@ defineProps<{
 </template>
 
 <style scoped>
-.group:hover {
+.group:hover,
+.group:active {
   border-color: color-mix(in srgb, var(--brand-color) 30%, transparent);
   box-shadow: 0 0 15px -5px var(--brand-color);
 }
