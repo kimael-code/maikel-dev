@@ -18,6 +18,10 @@ hero:
       alt: "Infraestructura Docker Roble"
     - src: /hero/infra-roble-terminal-2.avif
       alt: "Script de Instalación Roble"
+    - src: /hero/cuenta-casos-1.avif
+      alt: "CuentaCasos Dashboard"
+    - src: /hero/cuenta-casos-2.avif
+      alt: "CuentaCasos TallyMarks"
     - src: /hero/status-contable-1.avif
       alt: "Seguimiento de egresos e ingresos"
 about:

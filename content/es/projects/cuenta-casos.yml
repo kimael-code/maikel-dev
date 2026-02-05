@@ -1,0 +1,7 @@
+title: CuentaCasos
+description: Aplicación web diseñada para llevar el conteo de casos o ítems de manera simple, eficiente y segura. Incluye autenticación de usuario para proteger la información y un panel de control con visualizaciones tipo TallyMark.
+image: /hero/cuenta-casos-1.avif
+url: "https://cuenta-casos.vercel.app/"
+tags: ["nuxt", "better-auth", "drizzle", "turso", "tailwind"]
+date: 2026-02-04
+language: "es"

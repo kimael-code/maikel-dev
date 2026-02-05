@@ -1,11 +1,14 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 
-const { data: page } = await useAsyncData(`projects-page-${locale.value}`, () => {
-  return queryCollection('pages')
-    .where('language', '=', locale.value)
-    .first()
-})
+const { data: page } = await useAsyncData(
+  `projects-page-${locale.value}`,
+  () => {
+    return queryCollection('pages')
+      .where('language', '=', locale.value)
+      .first()
+  }
+)
 
 if (!page.value) {
   throw createError({
@@ -15,12 +18,15 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData(`projects-${locale.value}`, () => {
-  return queryCollection('projects')
-    .where('language', '=', locale.value)
-    .order('date', 'DESC')
-    .all()
-})
+const { data: projects } = await useAsyncData(
+  `projects-${locale.value}`,
+  () => {
+    return queryCollection('projects')
+      .where('language', '=', locale.value)
+      .order('date', 'DESC')
+      .all()
+  }
+)
 
 const { global } = useAppConfig()
 
@@ -78,6 +84,7 @@ useSeoMeta({
           :title="project.title"
           :description="project.description"
           :to="project.url"
+          target="_blank"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
@@ -97,7 +104,7 @@ useSeoMeta({
               class="text-sm text-primary flex items-center"
               target="_blank"
             >
-              {{ $t('View Project') }}
+              {{ $t("View Project") }}
               <UIcon
                 name="i-lucide-arrow-right"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"

@@ -1,0 +1,7 @@
+title: CuentaCasos
+description: Web application designed to keep track of cases or items simply, efficiently, and securely. It includes user authentication to protect information and a dashboard with TallyMark visualizations.
+image: /hero/cuenta-casos-1.avif
+url: "https://cuenta-casos.vercel.app/"
+tags: ["nuxt", "better-auth", "drizzle", "turso", "tailwind"]
+date: 2026-02-04
+language: "en"
