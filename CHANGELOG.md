@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/kimael-code/maikel-dev/compare/v1.1.0...v1.2.0) (2026-02-05)
+
+
+### Features
+
+* integrate CuentaCasos project and open project links in new tab ([b6ed8ae](https://github.com/kimael-code/maikel-dev/commit/b6ed8ae958f7f8ac90e7fd43d2113125f9908a57))
+
+
+### Bug Fixes
+
+* **theme:** use media queries for theme-color to fix PWA dark mode ([a4ad432](https://github.com/kimael-code/maikel-dev/commit/a4ad432af34fcc2815fe507238d4540f0d232a51))
+* **ui:** add active state for stack icons on mobile ([c3bf0a0](https://github.com/kimael-code/maikel-dev/commit/c3bf0a08975a4a23c842defe4f15a3deb2aa5aa5))
+
 ## [1.1.0](https://github.com/kimael-code/maikel-dev/compare/v1.0.0...v1.1.0) (2026-01-20)
 
 
