@@ -1,0 +1,7 @@
+title: Arkeo Financiero
+description: Comprehensive personal finance management application that allows tracking income, expenses, and savings in multiple currencies (VES/USD). Features real-time BCV exchange rate integration, detailed analysis with dynamic charts, account and category management, and Excel report export.
+image: /hero/arkeo-1.avif
+url: "https://arkeo.vercel.app/"
+tags: ["nuxt", "better-auth", "drizzle", "turso", "tailwind", "i18n", "echarts"]
+date: 2026-02-18
+language: "en"

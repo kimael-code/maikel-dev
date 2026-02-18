@@ -6,6 +6,10 @@ title: "Maikel Carballo: Desarrollador Web Full Stack y Profesor de Informática
 description: "Construyendo soluciones web robustas, escalables y seguras para optimizar procesos. Más de 5 años de experiencia convirtiendo ideas en aplicaciones web eficientes."
 hero:
   images:
+    - src: /hero/arkeo-1.avif
+      alt: "Arkeo Financiero - Dashboard"
+    - src: /hero/arkeo-2.avif
+      alt: "Arkeo Financiero - Análisis"
     - src: /hero/gedezmp-1.avif
       alt: "Generador de archivos ZMP"
     - src: /hero/mi-admin-usuarios-1.avif
