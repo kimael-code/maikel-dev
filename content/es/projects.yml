@@ -1,7 +1,11 @@
+seo:
+  title: "Proyectos de Maikel Carballo | Soluciones Web Full Stack"
+  description: "Explora mi portafolio de proyectos personales y profesionales. Aplicaciones escalables, herramientas open source y más."
+  keywords: "proyectos, portafolio, software, desarrollo web"
 title: Proyectos Personales, Aprendiendo tecnologías.
 description: Aquí puedes encontrar una selección de mis proyectos personales, algunos de los cuales están en desarrollo activo. Siéntete libre de explorar el código y las soluciones que he desarrollado.
 links:
   - label: "Hablemos"
     color: "neutral"
-  - label: 'Envíame un correo'
+  - label: "Envíame un correo"
 language: "es"

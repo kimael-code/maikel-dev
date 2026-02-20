@@ -1,7 +1,11 @@
+seo:
+  title: "Maikel Carballo's Projects | Full Stack Web Solutions"
+  description: "Explore my portfolio of personal and professional projects. Scalable applications, open source tools, and modern web solutions."
+  keywords: "projects, portfolio, open source, web development, showcase"
 title: Personal Projects, Learning technologies.
 description: Here you can find a selection of my personal projects, some of which are under active development. Feel free to explore the code and the solutions I've developed.
 links:
   - label: "Let's talk"
     color: "neutral"
-  - label: 'Email me'
+  - label: "Email me"
 language: "en"

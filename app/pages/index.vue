@@ -2,9 +2,7 @@
 const { locale } = useI18n()
 
 const { data: page } = await useAsyncData(`index-${locale.value}`, () => {
-  return queryCollection('index')
-    .where('language', '=', locale.value)
-    .first()
+  return queryCollection('index').where('language', '=', locale.value).first()
 })
 
 if (!page.value) {
@@ -16,10 +14,10 @@ if (!page.value) {
 }
 
 useSeoMeta({
-  title: page.value?.seo.title || page.value?.title,
-  ogTitle: page.value?.seo.title || page.value?.title,
-  description: page.value?.seo.description || page.value?.description,
-  ogDescription: page.value?.seo.description || page.value?.description
+  title: () => page.value?.seo?.title || page.value?.title,
+  ogTitle: () => page.value?.seo?.title || page.value?.title,
+  description: () => page.value?.seo?.description || page.value?.description,
+  ogDescription: () => page.value?.seo?.description || page.value?.description
 })
 </script>
 

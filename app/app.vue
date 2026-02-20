@@ -46,21 +46,43 @@ useHead({
       sizes: '512x512',
       href: '/android-chrome-512x512.png'
     },
-    { rel: 'manifest', href: '/manifest.webmanifest' }
+    { rel: 'manifest', href: '/manifest.webmanifest' },
+    {
+      rel: 'canonical',
+      href: `https://maikel-dev.vercel.app${useRoute().path}`
+    }
   ],
   htmlAttrs: {
-    lang: locale.value
+    lang: computed(() => locale.value)
   }
 })
 
 useSeoMeta({
   titleTemplate: t('seo.titleTemplate'),
+  ogSiteName: 'Maikel Carballo',
   ogImage:
     'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
   twitterImage:
     'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
-  twitterCard: 'player'
+  twitterCard: 'summary_large_image'
 })
+
+useSchemaOrg([
+  definePerson({
+    name: 'Maikel Carballo',
+    image:
+      'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
+    description: t('seo.defaultDescription'),
+    sameAs: [
+      'https://github.com/kimael-code',
+      'https://discord.gg/TTAKNqpagT',
+      'https://bsky.app/profile/maikel-dev.bsky.social'
+    ]
+  }),
+  defineWebSite({
+    name: 'Maikel Carballo - Portafolio'
+  })
+])
 </script>
 
 <template>
