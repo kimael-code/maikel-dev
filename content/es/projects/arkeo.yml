@@ -1,7 +1,7 @@
 title: Arkeo Financiero
 description: Aplicación integral de gestión financiera personal que permite el seguimiento de ingresos, egresos y ahorros en múltiples monedas (VES/USD). Incluye integración de tasa BCV en tiempo real, análisis detallado con gráficos dinámicos, gestión de cuentas y categorías, y exportación de reportes a Excel.
 image: /hero/arkeo-1.avif
-url: "https://arkeo.vercel.app/"
+url: "https://arkeofinanciero.vercel.app"
 tags: ["nuxt", "better-auth", "drizzle", "turso", "tailwind", "i18n", "echarts"]
 date: 2026-02-18
 language: "es"
