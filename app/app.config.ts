@@ -45,6 +45,12 @@ export default defineAppConfig({
         'to': 'https://github.com/kimael-code',
         'target': '_blank',
         'aria-label': 'Maikel on GitHub'
+      },
+      {
+        'icon': 'i-simple-icons-kofi',
+        'to': 'https://ko-fi.com/maikelcarballo',
+        'target': '_blank',
+        'aria-label': 'Support Maikel on Ko-fi'
       }
     ]
   }
