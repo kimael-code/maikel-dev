@@ -26,7 +26,7 @@ useSeoMeta({
     <LandingHero :page />
     <UPageSection
       :ui="{
-        container: '!pt-0 lg:grid lg:grid-cols-2 lg:gap-8'
+        container: 'pt-0! lg:grid lg:grid-cols-2 lg:gap-8'
       }"
     >
       <LandingAbout :page />
@@ -37,7 +37,7 @@ useSeoMeta({
       :title="page.stack.title"
       :description="page.stack.description"
       :ui="{
-        container: 'px-0 !pt-0 sm:gap-6 lg:gap-8',
+        container: 'px-0 pt-0! sm:gap-6 lg:gap-8',
         title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
         description: 'text-left mt-3 text-sm sm:text-md lg:text-sm text-muted'
       }"

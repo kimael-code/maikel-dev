@@ -1,10 +1,13 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
+const i18nHead = useLocaleHead()
 const colorMode = useColorMode()
 
 const color = computed(() =>
   colorMode.value === 'dark' ? '#1a2e05' : 'white'
 )
+
+useHead(i18nHead)
 
 useHead({
   meta: [
@@ -21,7 +24,7 @@ useHead({
       content: '#1a2e05',
       media: '(prefers-color-scheme: dark)'
     },
-    { name: 'apple-mobile-web-app-capable', content: 'yes' },
+    { name: 'mobile-web-app-capable', content: 'yes' },
     {
       name: 'apple-mobile-web-app-status-bar-style',
       content: 'black-translucent'
@@ -46,19 +49,15 @@ useHead({
       sizes: '512x512',
       href: '/android-chrome-512x512.png'
     },
-    { rel: 'manifest', href: '/manifest.webmanifest' },
-    {
-      rel: 'canonical',
-      href: `https://maikel-dev.vercel.app${useRoute().path}`
-    }
+    { rel: 'manifest', href: '/manifest.webmanifest' }
   ],
   htmlAttrs: {
-    lang: computed(() => locale.value)
+    lang: () => i18nHead.value.htmlAttrs?.lang || locale.value
   }
 })
 
 useSeoMeta({
-  titleTemplate: t('seo.titleTemplate'),
+  titleTemplate: () => t('seo.titleTemplate'),
   ogSiteName: 'Maikel Carballo',
   ogImage:
     'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
@@ -72,7 +71,7 @@ useSchemaOrg([
     name: 'Maikel Carballo',
     image:
       'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
-    description: t('seo.defaultDescription'),
+    description: () => t('seo.defaultDescription'),
     sameAs: [
       'https://github.com/kimael-code',
       'https://discord.gg/TTAKNqpagT',
