@@ -7,5 +7,8 @@ description: Aquí puedes encontrar una selección de mis proyectos personales, 
 links:
   - label: "Hablemos"
     color: "neutral"
-  - label: "Envíame un correo"
+  - label: "Ver mi GitHub"
+    icon: "i-simple-icons-github"
+    color: "neutral"
+    variant: "subtle"
 language: "es"

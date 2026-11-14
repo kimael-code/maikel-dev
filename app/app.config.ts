@@ -1,13 +1,12 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
-      light:
-        'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
+      dark: '/avatar.avif',
+      light: '/avatar.avif',
       alt: 'My profile picture'
     },
     meetingLink: 'https://discord.gg/TTAKNqpagT',
-    email: 'mcarballo@tutanota.com',
+    githubLink: 'https://github.com/kimael-code',
     available: true
   },
   ui: {

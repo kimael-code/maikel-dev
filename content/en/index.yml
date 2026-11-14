@@ -11,11 +11,11 @@ hero:
     - src: /hero/arkeo-2.avif
       alt: "Arkeo Financiero - Analysis"
     - src: /hero/gedezmp-1.avif
-      alt: Generador de archivos ZMP
+      alt: "ZMP File Generator"
     - src: /hero/mi-admin-usuarios-1.avif
-      alt: Administrador de usuarios
+      alt: "User Management Dashboard"
     - src: /hero/scbmk-1.avif
-      alt: Sistema de Control Base mk
+      alt: "SCBMK Control System"
     - src: /hero/participacion-nuxt.avif
       alt: "Participation Nuxt"
     - src: /hero/infra-roble-terminal-1.avif
@@ -27,7 +27,7 @@ hero:
     - src: /hero/cuenta-casos-2.avif
       alt: "CuentaCasos TallyMarks"
     - src: /hero/status-contable-1.avif
-      alt: "Seguimiento de egresos e ingresos"
+      alt: "Income and Expense Tracker"
 about:
   title: "About Me"
   description: |

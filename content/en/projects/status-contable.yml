@@ -3,5 +3,5 @@ description: Web application for tracking personal financial expenses and income
 image: /hero/status-contable-1.avif
 url: "https://gitlab.com/profemaik/status-contable"
 tags: ["dashboard", "laravel", "vue", "bulma", "postgresql"]
-date: "2023"
+date: 2023-01-01
 language: "en"

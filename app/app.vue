@@ -59,23 +59,21 @@ useHead({
 useSeoMeta({
   titleTemplate: () => t('seo.titleTemplate'),
   ogSiteName: 'Maikel Carballo',
-  ogImage:
-    'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
-  twitterImage:
-    'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
+  ogImage: 'https://maikel-dev.vercel.app/avatar.jpg',
+  twitterImage: 'https://maikel-dev.vercel.app/avatar.jpg',
   twitterCard: 'summary_large_image'
 })
 
 useSchemaOrg([
   definePerson({
     name: 'Maikel Carballo',
-    image:
-      'https://cdn.bsky.app/img/avatar/plain/did:plc:baqqkpclvukg7s3e2s3f5yoz/bafkreielixenxu3y6iqpychyxb3lhtn3wgeont73ntmxwhdwp5m3lxs6qy@jpeg',
+    image: 'https://maikel-dev.vercel.app/avatar.jpg',
     description: () => t('seo.defaultDescription'),
     sameAs: [
       'https://github.com/kimael-code',
       'https://discord.gg/TTAKNqpagT',
-      'https://bsky.app/profile/maikel-dev.bsky.social'
+      'https://bsky.app/profile/maikel-dev.bsky.social',
+      'https://ko-fi.com/maikelcarballo'
     ]
   }),
   defineWebSite({
