@@ -7,5 +7,8 @@ description: Here you can find a selection of my personal projects, some of whic
 links:
   - label: "Let's talk"
     color: "neutral"
-  - label: "Email me"
+  - label: "View my GitHub"
+    icon: "i-simple-icons-github"
+    color: "neutral"
+    variant: "subtle"
 language: "en"

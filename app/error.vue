@@ -12,13 +12,13 @@ defineProps({
 
 useHead({
   htmlAttrs: {
-    lang: locale.value
+    lang: () => locale.value
   }
 })
 
 useSeoMeta({
-  title: t('seo.error.title'),
-  description: t('seo.error.description')
+  title: () => t('seo.error.title'),
+  description: () => t('seo.error.description')
 })
 </script>
 

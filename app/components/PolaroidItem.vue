@@ -19,6 +19,8 @@ defineProps<{
     <img
       :src="image.src"
       :alt="image.alt"
+      loading="lazy"
+      decoding="async"
       class="size-32 object-cover"
     >
     <span class="w-32 text-xs text-black font-serif font-medium text-center mt-2">

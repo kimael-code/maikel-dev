@@ -45,8 +45,8 @@ useSeoMeta({
       :description="page.description"
       :links="page.links"
       :ui="{
-        title: '!mx-0 text-left',
-        description: '!mx-0 text-left',
+        title: 'mx-0! text-left',
+        description: 'mx-0! text-left',
         links: 'justify-start'
       }"
     >
@@ -58,10 +58,14 @@ useSeoMeta({
           <UButton
             :label="page.links[0]?.label"
             :to="global.meetingLink"
+            target="_blank"
+            rel="noopener noreferrer"
             v-bind="page.links[0]"
           />
           <UButton
-            :to="`mailto:${global.email}`"
+            :to="global.githubLink"
+            target="_blank"
+            rel="noopener noreferrer"
             v-bind="page.links[1]"
           />
         </div>
@@ -69,7 +73,7 @@ useSeoMeta({
     </UPageHero>
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: 'pt-0!'
       }"
     >
       <Motion
@@ -95,25 +99,43 @@ useSeoMeta({
         >
           <template #leading>
             <span class="text-sm text-muted">
-              {{ new Date(project.date).getFullYear() }}
+              {{ new Date(project.date).getUTCFullYear() }}
             </span>
           </template>
           <template #footer>
-            <ULink
-              :to="project.url"
-              class="text-sm text-primary flex items-center"
-              target="_blank"
-            >
-              {{ $t("View Project") }}
-              <UIcon
-                name="i-lucide-arrow-right"
-                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-              />
-            </ULink>
+            <div class="flex flex-col gap-3">
+              <div
+                v-if="project.tags?.length"
+                class="flex flex-wrap gap-1.5"
+              >
+                <UBadge
+                  v-for="tag in project.tags"
+                  :key="tag"
+                  :label="tag"
+                  color="neutral"
+                  variant="subtle"
+                  size="sm"
+                />
+              </div>
+              <ULink
+                :to="project.url"
+                class="text-sm text-primary flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ $t("View Project") }}
+                <UIcon
+                  name="i-lucide-arrow-right"
+                  class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                />
+              </ULink>
+            </div>
           </template>
           <img
             :src="project.image"
             :alt="project.title"
+            loading="lazy"
+            decoding="async"
             class="object-cover w-full h-48 rounded-lg"
           >
         </UPageCard>

@@ -1,24 +1,24 @@
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 export const navLinks = (): NavigationMenuItem[] => {
-  const { t, locale } = useI18n()
-  const links = computed(() => [
+  const { t } = useI18n()
+  const localePath = useLocalePath()
+
+  return [
     {
       label: t('Home'),
       icon: 'i-lucide-home',
-      to: locale.value === 'en' ? '/' : `/${locale.value}`
+      to: localePath('/')
     },
     {
       label: t('Projects'),
       icon: 'i-lucide-folder',
-      to: locale.value === 'en' ? '/projects' : `/${locale.value}/projects`
+      to: localePath('/projects')
     },
     {
       label: t('About'),
       icon: 'i-lucide-user',
-      to: locale.value === 'en' ? '/about' : `/${locale.value}/about`
+      to: localePath('/about')
     }
-  ])
-
-  return links.value
+  ]
 }

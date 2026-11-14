@@ -25,14 +25,28 @@ export default defineNuxtConfig({
     name: 'Maikel Carballo - Portafolio'
   },
 
-  compatibilityDate: '2024-11-01',
+  content: {
+    experimental: {
+      sqliteConnector: 'native'
+    }
+  },
+
+  routeRules: {
+    '/**': {
+      headers: {
+        'X-Content-Type-Options': 'nosniff',
+        'X-Frame-Options': 'DENY',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+        'Permissions-Policy': 'camera=(), microphone=(), geolocation=()'
+      }
+    }
+  },
+
+  compatibilityDate: '2026-06-30',
 
   nitro: {
     prerender: {
-      // Ignora la ruta raíz para que sea manejada dinámicamente por el servidor Nitro.
-      // Esto permite que la redirección de idioma del lado del servidor funcione correctamente.
-      ignore: ['/'],
-      routes: ['/es', '/es/about', '/es/projects', '/about', '/projects'],
+      routes: ['/', '/es', '/es/about', '/es/projects', '/about', '/projects'],
       crawlLinks: true
     }
   },
@@ -69,9 +83,13 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
-      alwaysRedirect: true
+      alwaysRedirect: false
     },
     baseUrl: 'https://maikel-dev.vercel.app'
+  },
+
+  ogImage: {
+    zeroRuntime: true
   },
 
   sitemap: {}
