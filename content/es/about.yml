@@ -1,15 +1,19 @@
 seo:
-  title: "Sobre Maikel Carballo | Trayectoria y Tecnologías"
-  description: "Conoce a Maikel Carballo, Analista de Sistemas y Profesor de Informática. Más de 5 años creando soluciones con Laravel, Vue.js y Docker."
-  keywords: "experiencia, biografía, profesor informática, sistemas analista"
+  title: "Sobre Maikel Carballo | Desarrollador Full Stack & DevOps"
+  description: "Conoce a Maikel Carballo, Desarrollador Web Full Stack, Analista de Sistemas y Profesor de Informática con más de 6 años creando soluciones con Laravel, Vue.js, PostgreSQL y Docker."
+  keywords: "experiencia, biografía, desarrollador full stack, devops, analista de sistemas, profesor informática, laravel, vue, docker, gitlab ci"
 title: Sobre Mí
-description: Ser humano, hijo, felizmente acompañado, profesor, pro-gramador y pro-gamer.
+description: Desarrollador Web Full Stack con enfoque DevOps, Analista de Sistemas y Profesor de Informática.
 intro: |
-  ¡Hola! Soy Maikel Carballo, un apasionado Desarrollador Web Full Stack y Profesor de Informática residenciado en La Guaira, Venezuela. Mi objetivo principal es construir software de alta calidad que no solo cumpla con los requisitos técnicos, sino que también agilice los procesos y entregue valor real a las organizaciones.
+  ¡Hola! Soy Maikel Carballo, un apasionado Desarrollador Web Full Stack con conocimientos de DevOps y Profesor de Informática residenciado en La Guaira, Venezuela. Mi objetivo principal es construir software de alta calidad que no solo cumpla con los requisitos técnicos, sino que también agilice los procesos operativos y entregue valor real a las organizaciones y negocios.
 
-  ### El Programador y Profesor
+  ### El Ingeniero de Software y Profesor
 
-  Con una sólida trayectoria de más de cinco años, he tenido el privilegio de colaborar con importantes instituciones del sector público en Venezuela. Actualmente me desempeño como Analista de Sistemas en una institución financiera pública, responsable del desarrollo y mantenimiento de aplicaciones críticas para la gestión de procesos internos. Usando tecnologías como: PHP (Laravel, Yii2), Vue.js, Inertia.js, PostgreSQL y Docker. Mi experiencia también incluye mi rol como Analista Programador. Adicionalmente, he cultivado mi pasión por la enseñanza como Profesor de Programación en la Universidad Nueva Esparta, contribuyendo a la formación de futuros talentos en el campo de la tecnología.
+  Con una trayectoria de más de seis años en desarrollo de software, he tenido el privilegio de diseñar, construir y mantener sistemas críticos en el sector público venezolano. Desde 2021 me desempeño como Analista de Sistemas en una institución financiera pública, donde he liderado el desarrollo de plataformas internas para la administración integral de riesgos operacionales, la gestión de eventos institucionales y la coordinación de procesos de liquidación financiera y certificaciones laborales.
+
+  En este rol he abordado retos complejos de ingeniería del mundo real: desde la migración de sistemas de escritorio heredados (Visual Basic 6 y SQL Server 2005) hacia aplicaciones web modernas sobre **PostgreSQL** —implementando asistentes de depuración progresiva de datos bajo la filosofía **Strangler Fig** para sanear bases de datos históricas altamente inconsistentes—, hasta la resolución de incidencias críticas en sistemas ERP de terceros.
+
+  Para elevar la calidad y velocidad de entrega del equipo, creé un *starter kit* corporativo interno basado en **Laravel, Inertia.js, Vue.js, TypeScript y Tailwind CSS** alineado a las políticas institucionales, e implementé la automatización de despliegues mediante **Docker, Nginx, Container Registry y pipelines CI/CD en GitLab self-hosted con GitLab Runners**. Previamente me desempeñé como Analista Programador y cultivé mi vocación docente como Profesor de Programación en la Universidad Nueva Esparta (UNE), experiencia que fortalece mi capacidad para comunicar conceptos técnicos con claridad y estructurar soluciones mantenibles.
 stack:
   content: |
     ### Herramientas y Tecnologías
@@ -37,6 +41,12 @@ stack:
     - name: "Docker"
       icon: "i-simple-icons-docker"
       color: "#2496ED"
+    - name: "Nginx"
+      icon: "i-simple-icons-nginx"
+      color: "#009639"
+    - name: "Redis"
+      icon: "i-simple-icons-redis"
+      color: "#FF4438"
     - name: "Ubuntu"
       icon: "i-simple-icons-ubuntu"
       color: "#E95420"
@@ -66,7 +76,7 @@ stack:
 personal: |
   ### Más Allá de la Pantalla
 
-  Cuando no estoy programando... podría estar jugando Dragonheir: Silent Gods 🎮, pasando tiempo con mis seres queridos 💞, escuchando buena música 🎵, o tomando fotos 📸.
+  Fuera del código soy un ser humano familiar y felizmente acompañado 💞. Cuando no estoy programando, podrías encontrarme jugando Dragonheir: Silent Gods 🎮, escuchando buena música 🎵 o capturando momentos con la cámara 📸.
 
   Gracias por interesarte en mi camino profesional. Si crees que mi experiencia y enfoque pueden ayudarte a materializar tu próxima gran idea o resolver un reto técnico complejo, ¡estaré encantado de [conversar](https://bsky.app/profile/maikel-dev.bsky.social)! No olvides echar un vistazo a mis [proyectos](/es/projects).
 

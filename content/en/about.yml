@@ -1,15 +1,19 @@
 seo:
-  title: "About Maikel Carballo | Full Stack Web Developer & IT Professor"
-  description: "Learn more about Maikel Carballo, a Full Stack Developer with over 5 years of experience in PHP, Laravel, and Vue.js. IT Professor and tech enthusiast."
-  keywords: "biography, background, experience, it professor, software engineer"
+  title: "About Maikel Carballo | Full Stack Developer & DevOps"
+  description: "Learn more about Maikel Carballo, a Full Stack Web Developer, Systems Analyst, and IT Professor with over 6 years of experience in Laravel, Vue.js, PostgreSQL, and Docker."
+  keywords: "biography, background, experience, full stack developer, devops, systems analyst, it professor, laravel, vue, docker, gitlab ci"
 title: About Me
-description: Human being, son, lovely taken, professor, pro-grammer and pro-gamer.
+description: Full Stack Web Developer with a DevOps focus, Systems Analyst, and IT Professor.
 intro: |
-  Hello! I'm Maikel Carballo, a passionate Full Stack Web Developer and IT Professor based in La Guaira, Venezuela. My main goal is to build high-quality software that not only meets technical requirements but also streamlines processes and delivers real value to organizations.
+  Hello! I'm Maikel Carballo, a passionate Full Stack Web Developer with DevOps expertise and IT Professor based in La Guaira, Venezuela. My main goal is to build high-quality software that not only meets technical requirements, but also streamlines operational workflows and delivers real value to organizations and businesses.
 
-  ### The Programmer & Professor
+  ### The Software Engineer & Professor
 
-  With a solid track record of over five years, I have had the privilege of collaborating with major public sector institutions in Venezuela. I currently serve as a Systems Analyst at a public financial institution, responsible for developing and maintaining critical applications for internal process management. Using technologies like: PHP (Laravel, Yii2), Vue.js, Inertia.js, PostgreSQL and Docker. My experience also includes my role as a Programmer Analyst. Additionally, I have cultivated my passion for teaching as a Programming Professor at Universidad Nueva Esparta, contributing to the education of future talent in the technology field.
+  With a track record of over six years in software development, I have had the privilege of designing, building, and maintaining mission-critical systems in the Venezuelan public sector. Since 2021, I have served as a Systems Analyst at a public financial institution, leading the development of internal platforms for comprehensive operational risk management, institutional event coordination, and financial liquidation workflows including employment certification management.
+
+  In this role, I have tackled complex real-world engineering challenges: from migrating legacy desktop applications (Visual Basic 6 and SQL Server 2005) to modern web platforms backed by **PostgreSQL**—implementing guided data-scrubbing assistants following the **Strangler Fig** philosophy to clean up highly inconsistent historical databases—to debugging and stabilizing complex third-party ERP systems.
+
+  To standardize development and accelerate delivery, I built an internal corporate starter kit powered by **Laravel, Inertia.js, Vue.js, TypeScript, and Tailwind CSS** tailored to institutional policies, and implemented automated deployment workflows using **Docker, Nginx, Container Registry, and self-hosted GitLab CI/CD pipelines with GitLab Runners**. Previously, I worked as a Programmer Analyst and cultivated my passion for teaching as a Programming Professor at Universidad Nueva Esparta (UNE)—an experience that sharpens my ability to communicate technical concepts clearly and design maintainable architectures.
 stack:
   content: |
     ### Tools & Technologies
@@ -37,6 +41,12 @@ stack:
     - name: "Docker"
       icon: "i-simple-icons-docker"
       color: "#2496ED"
+    - name: "Nginx"
+      icon: "i-simple-icons-nginx"
+      color: "#009639"
+    - name: "Redis"
+      icon: "i-simple-icons-redis"
+      color: "#FF4438"
     - name: "Ubuntu"
       icon: "i-simple-icons-ubuntu"
       color: "#E95420"
@@ -66,7 +76,7 @@ stack:
 personal: |
   ### Beyond the Screen
 
-  When I'm not programming... I might be playing Dragonheir: Silent Gods 🎮, spending time with my loved ones 💞, listening to good music 🎵, or taking photos 📸.
+  Beyond the code, I'm a family-oriented person and happily partnered 💞. When I'm not programming, you might find me playing Dragonheir: Silent Gods 🎮, listening to good music 🎵, or capturing moments with my camera 📸.
 
   Thank you for taking an interest in my professional journey. If you feel my experience and approach can help bring your next big idea to life or solve a complex technical challenge, I'd love to [chat](https://bsky.app/profile/maikel-dev.bsky.social)! Don't forget to take a look at my [projects](/projects).
 

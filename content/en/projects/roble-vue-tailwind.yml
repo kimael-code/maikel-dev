@@ -1,5 +1,5 @@
 title: Roble
-description: Starter kit for developing monolithic web applications based on Laravel, Inertia.js, Vue.js, and Tailwind CSS (with PostgreSQL as the database).
+description: Starter kit for building modern monolithic web applications with Laravel, Inertia.js, Vue.js, Tailwind CSS, and PostgreSQL—designed to standardize architecture, authentication, and access control across administrative systems.
 image: /hero/roble-dashboard.avif
 url: "https://github.com/kimael-code/roble-vue-tailwind"
 tags: ["dashboard", "laravel", "vue", "tailwind", "postgresql"]

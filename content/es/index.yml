@@ -1,9 +1,9 @@
 seo:
-  title: "Maikel Carballo - Desarrollador Web Full Stack"
-  description: "Portafolio de Maikel Carballo, un Desarrollador Web Full Stack con más de 5 años de experiencia. Programador en PHP, Laravel, Vue.js y PostgreSQL. Descubre mis proyectos y experiencia."
-  keywords: "Desarrollador Web Full Stack, Desarrollador PHP, Desarrollador Laravel, Programador de Venezuela, Maikel Carballo, Portafolio de Desarrollador, Vue.js, Inertia.js, PostgreSQL, TypeScript, Nuxt."
+  title: "Maikel Carballo - Desarrollador Web Full Stack & DevOps"
+  description: "Portafolio de Maikel Carballo, Desarrollador Web Full Stack con conocimientos de DevOps y más de 6 años de experiencia en PHP, Laravel, Vue.js, Nuxt, PostgreSQL y Docker."
+  keywords: "Desarrollador Web Full Stack, DevOps, Desarrollador PHP, Desarrollador Laravel, Programador de Venezuela, Maikel Carballo, Vue.js, Inertia.js, PostgreSQL, TypeScript, Nuxt, Docker, CI/CD."
 title: "Maikel Carballo: Desarrollador Web Full Stack y Profesor de Informática"
-description: "Construyendo soluciones web robustas, escalables y seguras para optimizar procesos. Más de 5 años de experiencia convirtiendo ideas en aplicaciones web eficientes."
+description: "Construyendo y desplegando soluciones web robustas, escalables y seguras para optimizar procesos reales. Más de 6 años de experiencia en desarrollo Full Stack (Laravel, Vue.js, Nuxt, PostgreSQL) y automatización DevOps con Docker y CI/CD."
 hero:
   images:
     - src: /hero/arkeo-1.avif
@@ -31,8 +31,8 @@ hero:
 about:
   title: "Sobre Mí"
   description: |
-    ¡Hola! Soy Maikel Carballo, un apasionado Desarrollador Web Full Stack y Profesor de Informática residenciado en La Guaira, Venezuela.
-    Mi objetivo principal es construir software de alta calidad que no solo cumpla con los requisitos técnicos, sino que también agilice los procesos y entregue valor real a las organizaciones.
+    ¡Hola! Soy Maikel Carballo, Desarrollador Web Full Stack con enfoque en prácticas DevOps y Profesor de Informática residenciado en La Guaira, Venezuela.
+    Con más de 6 años de experiencia, diseño, construyo y automatizo el despliegue de aplicaciones web que modernizan procesos operativos, sanean datos heredados y entregan valor real a instituciones y negocios.
 experience:
   title: "Experiencia Laboral"
   items:
@@ -84,28 +84,28 @@ stack:
       color: "#2496ED"
 faq:
   title: "Preguntas Frecuentes"
-  description: "Respuestas a preguntas comunes sobre mi trabajo."
+  description: "Respuestas claras sobre mis servicios, experiencia técnica y modalidades de trabajo."
   categories:
-    - title: "Servicios y Proceso"
+    - title: "Servicios y Modalidades"
       questions:
-        - label: "¿Qué servicios ofreces?"
+        - label: "¿Qué soluciones y servicios ofreces?"
           content: |
-            Desarrollo aplicaciones y/o sistemas web. Esto incluye análisis de requerimientos, diseño de bases de datos, desarrollo y despliegue.
-        - label: "¿Cuál es tu metodología de desarrollo?"
+            Diseño, desarrollo y despliego aplicaciones y sistemas web a medida de principio a fin: desde soluciones para negocios, emprendimientos y PYMES (control de ingresos y egresos, gestión administrativa, seguimiento de casos o inventarios y paneles de reportes) hasta sistemas internos institucionales, migración de aplicaciones de escritorio heredadas (*legacy*) hacia la web y contenedorización de entornos. Además, asesoro sobre la mejor alternativa de despliegue según el presupuesto del proyecto: desde reutilizar hardware local con Linux (Ubuntu/Debian) y Docker hasta servidores VPS o plataformas en la nube como Vercel.
+        - label: "¿Cuál es tu metodología para proyectos nuevos o sistemas legacy?"
           content: |
-            Sigo una filosofía basada en **Scrum** combinada con **Spec Driven Development (SDD)**. Me enfoco en definir especificaciones técnicas precisas para guiar el desarrollo, priorizando siempre la entrega de valor en ciclos iterativos rápidos.
-        - label: "¿Qué tipo de trabajo te interesa?"
+            En desarrollos desde cero aplico **Spec Driven Development (SDD)** dentro de un marco ágil (**Scrum**), transformando requerimientos de negocio en especificaciones técnicas precisas y entregas iterativas. En la modernización de sistemas *legacy* (como migraciones desde Visual Basic 6 y SQL Server hacia PostgreSQL), implemento estrategias de saneamiento progresivo basadas en el patrón **Strangler Fig** y asistentes interactivos de depuración de datos, permitiendo limpiar inconsistencias históricas incluso cuando por restricciones operativas debe conservarse la estructura de datos original.
+        - label: "¿Qué modalidades de trabajo o contratación buscas?"
           content: |
-            Estoy interesado en cualquier tipo de trabajo, pero principalmente remoto o por proyectos. También estoy interesado en puestos a tiempo completo o presenciales.
-    - title: "Tecnologías y Filosofía"
+            Estoy disponible en dos modalidades principales: **1) Incorporación remota** (Full-Time o Contractor) en equipos de ingeniería nacionales o internacionales como Desarrollador Full Stack con enfoque DevOps, y **2) Desarrollo de sistemas web a medida por proyecto** para comercios, emprendimientos o empresas que necesiten digitalizar y automatizar sus operaciones.
+    - title: "Tecnologías, DevOps y Flujo"
       questions:
-        - label: "¿Cuál es tu stack de desarrollo?"
+        - label: "¿Cuál es tu stack tecnológico principal?"
           content: |
-            Mi stack principal se basa en **Laravel, Nuxt y Vue**. Utilizo estas herramientas por su robustez y eficiencia para construir aplicaciones escalables. Además, gestiono mi infraestructura con **Docker**. Si deseas ver el listado detallado de todas mis herramientas, puedes visitar mi sección [Sobre Mí](/es/about).
-        - label: "¿Sigues alguna metodología específica?"
+            Mi stack principal integra **Laravel, Nuxt, Vue.js, Inertia.js, TypeScript y Tailwind CSS**, respaldado por **PostgreSQL y Redis** en la capa de datos y **Docker + Nginx sobre Linux** en infraestructura. También cuento con experiencia dando soporte, corrigiendo incidencias y evolucionando sistemas construidos en **Yii2, CodeIgniter, React** y plataformas tipo ERP de terceros. Puedes consultar el listado completo en mi sección [Sobre Mí](/es/about).
+        - label: "¿Qué experiencia práctica tienes en DevOps y automatización CI/CD?"
           content: |
-            Aplico **Spec Driven Development (SDD)** dentro de un marco **Scrum**. Esto me permite transformar requerimientos complejos en especificaciones claras que guían una implementación precisa y eficiente.
-        - label: "¿Cómo integras la IA en tu flujo de trabajo?"
+            He diseñado e implementado flujos completos de **CI/CD en instancias self-hosted de GitLab con GitLab Runners** para múltiples sistemas en producción. Mis pipelines automatizan el análisis estático y de estilo (**Laravel Pint, PHPStan, vue-tsc**), la ejecución de pruebas con **Pest** en entornos efímeros aislados con **Docker Compose**, el versionado semántico automático, la construcción de imágenes multi-etapa (`app` + `Nginx`) en **Container Registry** privado y el despliegue remoto vía SSH hacia entornos de QA y producción.
+        - label: "¿Cómo integras la Inteligencia Artificial en tu flujo de ingeniería?"
           content: |
-            Utilizo **IA Agéntica** de vanguardia (Gemini, Claude 3.5 Sonnet, DeepSeek, Qwen) para potenciar la calidad del código, el debugging y la optimización. Esto me permite centrarme en la arquitectura avanzada y la lógica de negocio, garantizando rapidez y robustez.
+            Utilizo **IA Agéntica** como copiloto de ingeniería para acelerar el análisis de código, la escritura de pruebas automatizadas, la refactorización, el *debugging* y la documentación técnica. Todas las decisiones de arquitectura, modelado de datos, seguridad y lógica de negocio pasan estrictamente por mi validación profesional.
 language: es
