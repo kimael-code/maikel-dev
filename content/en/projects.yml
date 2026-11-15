@@ -6,7 +6,8 @@ title: Personal Projects, Learning technologies.
 description: Here you can find a selection of my personal projects, some of which are under active development. Feel free to explore the code and the solutions I've developed.
 links:
   - label: "Let's talk"
-    color: "neutral"
+    icon: "i-lucide-message-square"
+    color: "primary"
   - label: "View my GitHub"
     icon: "i-simple-icons-github"
     color: "neutral"

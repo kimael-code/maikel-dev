@@ -30,6 +30,21 @@ const { data: projects } = await useAsyncData(
 
 const { global } = useAppConfig()
 
+const titleParts = computed(() => {
+  const title = page.value?.title || ''
+  const commaIndex = title.indexOf(',')
+  if (commaIndex === -1) {
+    return {
+      prefix: '',
+      highlight: title
+    }
+  }
+  return {
+    prefix: title.slice(0, commaIndex + 1),
+    highlight: title.slice(commaIndex + 1).trim()
+  }
+})
+
 useSeoMeta({
   title: () => page.value?.seo?.title || page.value?.title,
   ogTitle: () => page.value?.seo?.title || page.value?.title,
@@ -50,6 +65,17 @@ useSeoMeta({
         links: 'justify-start'
       }"
     >
+      <template #title>
+        <span
+          v-if="titleParts.prefix"
+          class="text-highlighted"
+        >
+          {{ titleParts.prefix }}
+        </span>
+        <span class="text-gradient-brand">
+          {{ titleParts.prefix ? ` ${titleParts.highlight}` : titleParts.highlight }}
+        </span>
+      </template>
       <template #links>
         <div
           v-if="page.links"
@@ -90,15 +116,19 @@ useSeoMeta({
           :to="project.url"
           target="_blank"
           orientation="horizontal"
-          variant="naked"
+          variant="subtle"
+          spotlight
+          spotlight-color="primary"
           :reverse="index % 2 === 1"
-          class="group"
+          class="group mb-6 rounded-2xl ring-default/80 hover:ring-primary/50 transition-all duration-300 shadow-sm hover:shadow-[0_12px_35px_-10px_rgba(101,163,13,0.28)] dark:hover:shadow-[0_0_35px_-10px_rgba(163,230,53,0.28)] hover:-translate-y-0.5"
           :ui="{
-            wrapper: 'max-sm:order-last'
+            wrapper: 'max-sm:order-last',
+            spotlight: 'bg-default/75 dark:bg-default/90',
+            title: 'group-hover:text-primary transition-colors'
           }"
         >
           <template #leading>
-            <span class="text-sm text-muted">
+            <span class="inline-flex items-center font-mono text-xs font-medium text-primary bg-primary/10 border border-primary/20 px-2.5 py-0.5 rounded-full">
               {{ new Date(project.date).getUTCFullYear() }}
             </span>
           </template>
@@ -115,6 +145,7 @@ useSeoMeta({
                   color="neutral"
                   variant="subtle"
                   size="sm"
+                  class="font-mono text-[11px]"
                 />
               </div>
               <ULink
@@ -131,13 +162,15 @@ useSeoMeta({
               </ULink>
             </div>
           </template>
-          <img
-            :src="project.image"
-            :alt="project.title"
-            loading="lazy"
-            decoding="async"
-            class="object-cover w-full h-48 rounded-lg"
-          >
+          <div class="overflow-hidden rounded-xl border border-default/60 bg-default/40 shadow-md">
+            <img
+              :src="project.image"
+              :alt="project.title"
+              loading="lazy"
+              decoding="async"
+              class="object-cover w-full h-48 sm:h-52 transition-transform duration-500 ease-out group-hover:scale-105"
+            >
+          </div>
         </UPageCard>
       </Motion>
     </UPageSection>

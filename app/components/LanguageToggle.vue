@@ -20,7 +20,7 @@ const nextLocale = computed(() => (locale.value === 'en' ? 'es' : 'en'))
         name="i-lucide-languages"
         class="size-3.5 shrink-0"
       />
-      <span class="uppercase">{{ locale }}</span>
+      <span class="uppercase font-mono text-xs font-semibold tracking-wider">{{ locale }}</span>
     </UButton>
   </UTooltip>
 </template>

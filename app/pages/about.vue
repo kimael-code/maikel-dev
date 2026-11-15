@@ -36,8 +36,13 @@ useSeoMeta({
         links: 'justify-start'
       }"
     >
+      <template #title>
+        <span class="text-gradient-brand">
+          {{ page.title }}
+        </span>
+      </template>
       <UColorModeAvatar
-        class="sm:rotate-4 size-36 rounded-lg ring ring-default ring-offset-3 ring-offset-bg"
+        class="sm:rotate-3 hover:rotate-0 transition-all duration-300 size-36 rounded-2xl ring-2 ring-primary/40 ring-offset-4 ring-offset-bg shadow-[0_0_30px_-8px_var(--ui-primary)]"
         :light="global.picture?.light!"
         :dark="global.picture?.dark!"
         :alt="global.picture?.alt!"
