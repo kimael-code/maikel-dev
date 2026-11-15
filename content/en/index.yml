@@ -1,9 +1,9 @@
 seo:
-  title: "Maikel Carballo - Full Stack Web Dev"
-  description: "Portfolio of Maikel Carballo, a Full Stack Web Developer with over 5 years of experience. Specialist in PHP, Laravel, Vue.js, and PostgreSQL. Discover my projects and expertise."
-  keywords: "Full Stack Web Developer, PHP Developer, Laravel Developer, Venezuela Programmer, Maikel Carballo, Developer Portfolio, Vue.js, Inertia.js, PostgreSQL, TypeScript, Nuxt."
+  title: "Maikel Carballo - Full Stack Web Developer & DevOps"
+  description: "Portfolio of Maikel Carballo, a Full Stack Web Developer with DevOps expertise and over 6 years of experience in PHP, Laravel, Vue.js, Nuxt, PostgreSQL, and Docker."
+  keywords: "Full Stack Web Developer, DevOps, PHP Developer, Laravel Developer, Venezuela Programmer, Maikel Carballo, Vue.js, Inertia.js, PostgreSQL, TypeScript, Nuxt, Docker, CI/CD."
 title: "Maikel Carballo: Full Stack Web Developer & IT Professor"
-description: "Building robust, scalable, and secure web solutions to optimize processes. Over 5 years of experience turning ideas into efficient web applications."
+description: "Building and deploying robust, scalable, and secure web solutions to optimize real-world processes. Over 6 years of experience in Full Stack development (Laravel, Vue.js, Nuxt, PostgreSQL) and DevOps automation with Docker and CI/CD."
 hero:
   images:
     - src: /hero/arkeo-1.avif
@@ -31,8 +31,8 @@ hero:
 about:
   title: "About Me"
   description: |
-    Hello! I'm Maikel Carballo, a passionate Full Stack Web Developer and IT Professor based in La Guaira, Venezuela.
-    My main goal is to build high-quality software that not only meets technical requirements but also streamlines processes and delivers real value to organizations.
+    Hello! I'm Maikel Carballo, a Full Stack Web Developer with a strong DevOps focus and IT Professor based in La Guaira, Venezuela.
+    With over 6 years of experience, I design, build, and automate the deployment of web applications that modernize operational workflows, clean up legacy data, and deliver real value to organizations and businesses.
 experience:
   title: Work Experience
   items:
@@ -84,28 +84,28 @@ stack:
       color: "#2496ED"
 faq:
   title: Frequently Asked Questions
-  description: Answers to common questions about my job.
+  description: Clear answers about my services, technical background, and work models.
   categories:
-    - title: Services & Process
+    - title: Services & Work Models
       questions:
-        - label: What services do you offer?
+        - label: What solutions and services do you offer?
           content: |
-            I develop web applications and/or systems. This includes requirements analysis, database design, development, and deployment.
-        - label: What is your development methodology?
+            I design, develop, and deploy end-to-end custom web applications and systems: from tailored tools for small businesses, entrepreneurs, and SMBs (income and expense tracking, administrative workflows, case or inventory tracking, and reporting dashboards) to internal institutional platforms, migrating legacy desktop applications to the web, and containerizing environments. I also advise clients on the most cost-effective deployment strategy for their budget—from repurposing local hardware with Linux (Ubuntu/Debian) and Docker to VPS hosting or cloud platforms like Vercel.
+        - label: What is your methodology for new projects or legacy systems?
           content: |
-            I follow a methodology based on **Scrum** combined with **Spec Driven Development (SDD)**. I focus on defining precise technical specifications to drive development, prioritizing value delivery in fast iterative cycles.
-        - label: What type of work are you interested in?
+            For greenfield projects, I apply **Spec Driven Development (SDD)** within an agile **Scrum** framework, turning business requirements into clear technical specifications and iterative releases. When modernizing legacy systems (such as migrating Visual Basic 6 and SQL Server 2005 desktop applications to PostgreSQL), I implement progressive data-scrubbing workflows inspired by the **Strangler Fig** pattern—using guided data-cleaning assistants to resolve historical inconsistencies even when organizational constraints require preserving the original database structure.
+        - label: What work arrangements or engagement models are you looking for?
           content: |
-            I'm interested in any type of work, but primarily remote or project-based. I'm also interested in full-time or in-person positions.
-    - title: "Tech & Philosophy"
+            I am available under two main models: **1) Remote roles** (Full-Time or Contractor) joining national or international engineering teams as a Full Stack Developer with a DevOps focus, and **2) Project-based custom web development** for businesses, startups, or organizations looking to digitize and automate their internal operations.
+    - title: "Tech Stack, DevOps & Workflow"
       questions:
-        - label: "What is your development stack?"
+        - label: "What is your core technology stack?"
           content: |
-            My core stack is built on **Laravel, Nuxt, and Vue**. I use these tools for their robustness and efficiency in building scalable applications. I also manage my infrastructure with **Docker**. To see a detailed list of all my tools, you can visit my [About Me](/about) section.
-        - label: "Do you follow any specific methodology?"
+            My core stack combines **Laravel, Nuxt, Vue.js, Inertia.js, TypeScript, and Tailwind CSS**, backed by **PostgreSQL and Redis** for the data layer and **Docker + Nginx on Linux** for infrastructure. I also have hands-on experience maintaining, debugging, and extending existing systems built with **Yii2, CodeIgniter, React**, and third-party ERP platforms. You can explore the full list in my [About Me](/about) section.
+        - label: "What hands-on experience do you have with DevOps and CI/CD automation?"
           content: |
-            I apply **Spec Driven Development (SDD)** within a **Scrum** framework. This allows me to transform complex requirements into clear specifications that guide precise and efficient implementation.
-        - label: "How do you integrate AI into your workflow?"
+            I have designed and implemented end-to-end **CI/CD pipelines on self-hosted GitLab instances using GitLab Runners** across multiple production systems. My pipelines automate static analysis and code style checks (**Laravel Pint, PHPStan, vue-tsc**), automated **Pest** test suites in isolated ephemeral **Docker Compose** environments, semantic auto-versioning, multi-stage Docker image builds (`app` + `Nginx`) pushed to a private **Container Registry**, and remote SSH deployments to QA and production servers.
+        - label: "How do you integrate Artificial Intelligence into your engineering workflow?"
           content: |
-            I leverage state-of-the-art **Agentic AI** (Gemini, Claude 3.5 Sonnet, DeepSeek, Qwen) to enhance code quality, debugging, and optimization. This allows me to focus on advanced architecture and business logic, ensuring speed and robustness.
+            I use **Agentic AI** as an engineering copilot to accelerate code analysis, automated test authoring, refactoring, debugging, and technical documentation. Every architectural decision, data model, security policy, and business rule is strictly reviewed and validated under my professional judgment.
 language: en

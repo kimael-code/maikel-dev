@@ -19,7 +19,7 @@
       "title": "Page not found",
       "description": "We are sorry but this page could not be found."
     },
-    "defaultDescription": "Full Stack Web Developer with over 5 years of experience building robust web applications.",
-    "keywords": "Full Stack Developer, PHP, Laravel, Vue.js, PostgreSQL, TypeScript, Web Development"
+    "defaultDescription": "Full Stack Web Developer with DevOps expertise and over 6 years of experience building and deploying robust web applications.",
+    "keywords": "Full Stack Developer, DevOps, PHP, Laravel, Vue.js, Nuxt, Inertia.js, PostgreSQL, Docker, CI/CD, TypeScript, Web Development"
   }
 }

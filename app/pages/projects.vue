@@ -124,7 +124,8 @@ useSeoMeta({
           :ui="{
             wrapper: 'max-sm:order-last',
             spotlight: 'bg-default/75 dark:bg-default/90',
-            title: 'group-hover:text-primary transition-colors'
+            title: 'group-hover:text-primary transition-colors',
+            description: 'text-pretty'
           }"
         >
           <template #leading>
