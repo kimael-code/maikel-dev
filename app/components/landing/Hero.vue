@@ -3,16 +3,30 @@ import type { IndexCollectionItem } from '@nuxt/content'
 
 const { footer, global } = useAppConfig()
 
-defineProps<{
+const props = defineProps<{
   page: IndexCollectionItem
 }>()
+
+const titleParts = computed(() => {
+  const colonIndex = props.page.title.indexOf(':')
+  if (colonIndex === -1) {
+    return {
+      prefix: '',
+      highlight: props.page.title
+    }
+  }
+  return {
+    prefix: props.page.title.slice(0, colonIndex + 1),
+    highlight: props.page.title.slice(colonIndex + 1).trim()
+  }
+})
 </script>
 
 <template>
   <UPageHero
     :ui="{
       headline: 'flex items-center justify-center',
-      title: 'text-shadow-md max-w-lg mx-auto',
+      title: 'max-w-lg mx-auto',
       links: 'mt-4 flex-col justify-center items-center'
     }"
   >
@@ -34,7 +48,7 @@ defineProps<{
         }"
       >
         <UColorModeAvatar
-          class="size-18 ring ring-default ring-offset-3 ring-offset-bg"
+          class="size-20 ring-2 ring-primary/50 ring-offset-3 ring-offset-bg shadow-[0_0_25px_-5px_var(--ui-primary)] transition-transform duration-300 hover:scale-105"
           :light="global.picture?.light!"
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
@@ -59,7 +73,15 @@ defineProps<{
           delay: 0.1
         }"
       >
-        {{ page.title }}
+        <span
+          v-if="titleParts.prefix"
+          class="block text-highlighted"
+        >
+          {{ titleParts.prefix }}
+        </span>
+        <span class="text-gradient-brand">
+          {{ titleParts.highlight }}
+        </span>
       </Motion>
     </template>
 
@@ -105,7 +127,8 @@ defineProps<{
           <UButton
             :color="global.available ? 'success' : 'error'"
             variant="ghost"
-            class="gap-2"
+            class="gap-2 rounded-full border px-4 py-1.5 font-mono text-xs sm:text-sm"
+            :class="global.available ? 'border-success/30 bg-success/10 hover:bg-success/15 shadow-[0_0_20px_-6px_var(--color-green-500)]' : 'border-error/30 bg-error/10 hover:bg-error/15'"
             :to="global.available ? global.meetingLink : ''"
             :label="global.available ? $t('Available for new projects') : $t('Not available at the moment')"
           >
@@ -125,7 +148,7 @@ defineProps<{
         </div>
       </Motion>
 
-      <div class="gap-x-4 inline-flex mt-4">
+      <div class="gap-x-3 sm:gap-x-4 inline-flex mt-5">
         <Motion
           v-for="(link, index) of footer?.links"
           :key="index"
@@ -145,9 +168,12 @@ defineProps<{
             delay: 0.5 + index * 0.1
           }"
         >
-          <UButton
-            v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
-          />
+          <UTooltip :text="$t(link['aria-label'])">
+            <UButton
+              class="social-glow-btn rounded-xl p-2.5"
+              v-bind="{ 'size': 'md', 'color': 'neutral', 'variant': 'ghost', ...link, 'aria-label': $t(link['aria-label']) }"
+            />
+          </UTooltip>
         </Motion>
       </div>
     </template>

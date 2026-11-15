@@ -6,6 +6,13 @@
   "Available for new projects": "Available for new projects",
   "Not available at the moment": "Not available at the moment",
   "Switch language": "Switch to Español",
+  "Theme: System (switch to light)": "Theme: System (switch to light)",
+  "Theme: Light (switch to dark)": "Theme: Light (switch to dark)",
+  "Theme: Dark (switch to system)": "Theme: Dark (switch to system)",
+  "Maikel on Discord": "Maikel on Discord",
+  "Maikel on Bluesky": "Maikel on Bluesky",
+  "Maikel on GitHub": "Maikel on GitHub",
+  "Support Maikel on Ko-fi": "Support Maikel on Ko-fi",
   "seo": {
     "titleTemplate": "%s - Maikel Carballo Portfolio",
     "error": {

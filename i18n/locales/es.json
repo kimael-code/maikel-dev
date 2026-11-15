@@ -6,6 +6,13 @@
   "Available for new projects": "Disponible para nuevos proyectos",
   "Not available at the moment": "No disponible en este momento",
   "Switch language": "Cambiar a English",
+  "Theme: System (switch to light)": "Tema: Sistema (cambiar a claro)",
+  "Theme: Light (switch to dark)": "Tema: Claro (cambiar a oscuro)",
+  "Theme: Dark (switch to system)": "Tema: Oscuro (cambiar a sistema)",
+  "Maikel on Discord": "Maikel en Discord",
+  "Maikel on Bluesky": "Maikel en Bluesky",
+  "Maikel on GitHub": "Maikel en GitHub",
+  "Support Maikel on Ko-fi": "Apoya a Maikel en Ko-fi",
   "seo": {
     "titleTemplate": "%s - Portafolio de Maikel Carballo",
     "error": {

@@ -26,24 +26,26 @@ defineProps<{
           :in-view-options="{ once: true }"
           class="text-muted flex items-center text-nowrap gap-2"
         >
-          <p class="text-sm">
+          <p class="font-mono text-xs text-muted tracking-tight">
             {{ experience.date }}
           </p>
           <USeparator />
           <ULink
-            class="flex items-center gap-1"
+            class="flex items-center gap-1.5 group"
             :to="experience.company.url"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <span class="text-sm">
               {{ experience.position }}
             </span>
-            <div
-              class="inline-flex items-center gap-1"
-              :style="{ color: experience.company.color }"
-            >
-              <span class="font-medium">{{ experience.company.name }}</span>
-            </div>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border border-default bg-elevated/60 text-highlighted group-hover:border-primary/40 transition-colors">
+              <span
+                class="size-2 rounded-full shrink-0"
+                :style="{ backgroundColor: experience.company.color }"
+              />
+              {{ experience.company.name }}
+            </span>
           </ULink>
         </Motion>
       </div>

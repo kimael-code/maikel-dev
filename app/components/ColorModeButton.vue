@@ -1,14 +1,46 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
+const { t } = useI18n()
 
-const nextTheme = computed(() => (colorMode.value === 'dark' ? 'light' : 'dark'))
+const nextPreference = computed(() => {
+  if (colorMode.preference === 'system') {
+    return 'light'
+  }
+  if (colorMode.preference === 'light') {
+    return 'dark'
+  }
+  return 'system'
+})
+
+const currentIcon = computed(() => {
+  if (colorMode.preference === 'system') {
+    return 'i-lucide-monitor'
+  }
+  if (colorMode.preference === 'light') {
+    return 'i-lucide-sun'
+  }
+  return 'i-lucide-moon'
+})
+
+const themeLabel = computed(() => {
+  if (colorMode.preference === 'system') {
+    return t('Theme: System (switch to light)')
+  }
+  if (colorMode.preference === 'light') {
+    return t('Theme: Light (switch to dark)')
+  }
+  return t('Theme: Dark (switch to system)')
+})
 
 const switchTheme = () => {
-  colorMode.preference = nextTheme.value
+  colorMode.preference = nextPreference.value
 }
 
 const startViewTransition = (event: MouseEvent) => {
-  if (!document.startViewTransition) {
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  const nextResolvedTheme = nextPreference.value === 'system' ? systemTheme : nextPreference.value
+
+  if (!document.startViewTransition || nextResolvedTheme === colorMode.value) {
     switchTheme()
     return
   }
@@ -45,15 +77,17 @@ const startViewTransition = (event: MouseEvent) => {
 
 <template>
   <ClientOnly>
-    <UButton
-      :aria-label="`Switch to ${nextTheme} mode`"
-      :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
-      color="neutral"
-      variant="ghost"
-      size="sm"
-      class="rounded-full"
-      @click="startViewTransition"
-    />
+    <UTooltip :text="themeLabel">
+      <UButton
+        :aria-label="themeLabel"
+        :icon="currentIcon"
+        color="neutral"
+        variant="ghost"
+        size="sm"
+        class="rounded-full text-muted hover:text-highlighted"
+        @click="startViewTransition"
+      />
+    </UTooltip>
     <template #fallback>
       <div class="size-4" />
     </template>

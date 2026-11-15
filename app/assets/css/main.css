@@ -4,7 +4,8 @@
 @source "../../../content/**/*";
 
 @theme {
-  --font-sans: "Public Sans", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
   --font-serif: "Instrument Serif", serif;
 
   --color-primary-50: var(--color-lime-50);
@@ -20,18 +21,124 @@
   --color-primary-950: var(--color-lime-950);
 }
 
-:root {
+:root,
+.light {
   --ui-container: var(--container-4xl);
+  --ui-primary: var(--color-lime-600);
 
   ::selection {
-    color: #282a30;
-    background-color: #c8c8c8;
+    color: #1a2e05;
+    background-color: var(--color-lime-200);
   }
 }
 
 .dark {
+  --ui-primary: var(--color-lime-400);
+
   ::selection {
-    color: #ffffff;
-    background-color: #474747;
+    color: #ecfccb;
+    background-color: color-mix(in srgb, var(--color-lime-500) 35%, transparent);
   }
+}
+
+.text-gradient-brand {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-lime-600) 0%,
+    var(--color-emerald-600) 55%,
+    var(--color-teal-600) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dark .text-gradient-brand {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-lime-300) 0%,
+    var(--color-lime-400) 45%,
+    var(--color-emerald-400) 100%
+  );
+}
+
+.bg-grid-pattern {
+  background-image: radial-gradient(
+    color-mix(in srgb, var(--ui-text-muted) 22%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, #000 35%, transparent 100%);
+}
+
+.bg-ambient-glow {
+  background: radial-gradient(
+    ellipse 65% 55% at 50% 0%,
+    color-mix(in srgb, var(--ui-primary) 13%, transparent),
+    transparent 75%
+  );
+}
+
+.social-glow-btn {
+  border: 1px solid color-mix(in srgb, var(--brand-color, var(--ui-primary)) 22%, var(--ui-border));
+  background-color: color-mix(in srgb, var(--ui-bg-elevated) 55%, transparent);
+  box-shadow: 0 0 12px -4px color-mix(in srgb, var(--brand-color, var(--ui-primary)) 32%, transparent);
+  transition:
+    transform 250ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 250ms ease,
+    background-color 250ms ease,
+    color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.social-glow-btn:hover,
+.social-glow-btn:focus-visible {
+  transform: translateY(-2px) scale(1.12);
+  color: var(--brand-color, var(--ui-primary));
+  border-color: color-mix(in srgb, var(--brand-color, var(--ui-primary)) 65%, transparent);
+  background-color: color-mix(in srgb, var(--brand-color, var(--ui-primary)) 12%, var(--ui-bg-elevated));
+  box-shadow: 0 0 22px -3px color-mix(in srgb, var(--brand-color, var(--ui-primary)) 65%, transparent);
+}
+
+/* Floating 3D glassmorphism navigation pill */
+.nav-glass-pill {
+  background-color: color-mix(in srgb, var(--color-white) 82%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid color-mix(in srgb, var(--ui-primary) 22%, var(--color-neutral-200));
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.9),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.05),
+    0 10px 28px -6px rgba(10, 10, 10, 0.14),
+    0 0 24px -8px color-mix(in srgb, var(--ui-primary) 28%, transparent);
+  transition: border-color 250ms ease, box-shadow 250ms ease, background-color 250ms ease;
+}
+
+.nav-glass-pill:hover {
+  border-color: color-mix(in srgb, var(--ui-primary) 40%, var(--color-neutral-300));
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.95),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.06),
+    0 14px 34px -6px rgba(10, 10, 10, 0.18),
+    0 0 28px -6px color-mix(in srgb, var(--ui-primary) 40%, transparent);
+}
+
+.dark .nav-glass-pill {
+  background-color: color-mix(in srgb, var(--color-neutral-900) 82%, transparent);
+  border-color: color-mix(in srgb, var(--ui-primary) 26%, rgba(255, 255, 255, 0.12));
+  box-shadow:
+    inset 0 1px 1px color-mix(in srgb, var(--ui-primary) 28%, rgba(255, 255, 255, 0.16)),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.65),
+    0 12px 32px -4px rgba(0, 0, 0, 0.72),
+    0 0 28px -8px color-mix(in srgb, var(--ui-primary) 34%, transparent);
+}
+
+.dark .nav-glass-pill:hover {
+  background-color: color-mix(in srgb, var(--color-neutral-900) 88%, transparent);
+  border-color: color-mix(in srgb, var(--ui-primary) 45%, rgba(255, 255, 255, 0.16));
+  box-shadow:
+    inset 0 1px 1px color-mix(in srgb, var(--ui-primary) 38%, rgba(255, 255, 255, 0.2)),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.7),
+    0 16px 38px -4px rgba(0, 0, 0, 0.8),
+    0 0 34px -6px color-mix(in srgb, var(--ui-primary) 48%, transparent);
 }
